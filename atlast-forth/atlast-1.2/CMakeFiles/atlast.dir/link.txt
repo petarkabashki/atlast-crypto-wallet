@@ -1,0 +1,2 @@
+/usr/bin/ar qc libatlast.a CMakeFiles/atlast.dir/atlast.c.o
+/usr/bin/ranlib libatlast.a

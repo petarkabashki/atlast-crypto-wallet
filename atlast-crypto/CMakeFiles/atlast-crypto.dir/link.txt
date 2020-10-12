@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/atlast-crypto.dir/main.c.o CMakeFiles/atlast-crypto.dir/atl_primitives/crypto_atl.c.o -o atlast-crypto  -latlast-1.2 ../crypto/libcrypto.a 

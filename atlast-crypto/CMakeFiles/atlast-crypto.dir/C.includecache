@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/grenada/proj/atlast-crypto/main/atl_primitives/crypto_atl.c
+atldef.h
+/home/grenada/proj/atlast-crypto/main/atl_primitives/atldef.h
+bip39.h
+/home/grenada/proj/atlast-crypto/main/atl_primitives/bip39.h
+string.h
+-
+crypto_atl.h
+/home/grenada/proj/atlast-crypto/main/atl_primitives/crypto_atl.h
+stdio.h
+-
+stdlib.h
+-
+bip32.h
+/home/grenada/proj/atlast-crypto/main/atl_primitives/bip32.h
+base32.h
+/home/grenada/proj/atlast-crypto/main/atl_primitives/base32.h
+
+/home/grenada/proj/atlast-crypto/main/atl_primitives/crypto_atl.h
+atldef.h
+/home/grenada/proj/atlast-crypto/main/atl_primitives/atldef.h
+
+/home/grenada/proj/atlast-crypto/main/main.c
+stdio.h
+-
+

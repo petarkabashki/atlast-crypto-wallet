@@ -1,0 +1,124 @@
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\
+\ generate mnemonic
+\
+256 mne.gen
+type
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\
+\ mnemonic to seed 
+\ ( mnemonic pass seed -- ) 
+\
+256 mne.gen
+variable p
+10 allot
+"password" p s!
+variable seed
+64 allot 
+p seed mne>seed
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\
+\ get word from index
+\
+: t 1000 5 do i MNE.GWD type cr loop ;
+t
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\
+\ node from seed
+\ ( node curve seed_len seed -- res )
+\
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\
+\
+\
+\
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\
+\
+\
+\
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\
+\
+\
+\
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\
+\
+\
+\
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\
+\
+\
+\
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\ base32_encoded_length
+\ B32.ENC-LEN   (  in -- out )
+\
+\ 15 -> 24
+"tintiri mintiri" strlen ENC-LEN
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\ base32_decoded_length
+\ B32.DEC-LEN   ( in -- out )
+\
+\
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\ base32_encode
+\ B32.ENC   ( in inlen out outlen alphabet -- )
+\
+\
+variable inlen
+variable outlen
+32 string abc
+100 string enc
+"ABCDEFGHIJKLMNOPQRSTUVWXYZ23456789" abc s!
+50 string text
+"AAA NIAMA DA STANE TAKA!" text s!
+text dup strlen dup . cr dup B32.ENC-LEN dup . cr 1+ enc swap abc B32.ENC
+enc type
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\
+\ B32.DEC   ( in inlen out outlen alphabet -- res )
+\
+50 string dec
+enc 39 dec 24 abc B32.DEC
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\ base32_encode_unsafe
+\  
+\ B32.ENC-UNS   -  ( in inlen out -- )
+\
+100 string enc 
+20 string txt
+"tintiri mintiri" txt s!
+txt dup strlen enc
+B32.ENC-UNS
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\ base32_decode_unsafe
+\ 
+\ B32.DEC-UNS   -  ( in inlen out outlen alphabet -- res )
+\
+20 string dec
+enc dup 

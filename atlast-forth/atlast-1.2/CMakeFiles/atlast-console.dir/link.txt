@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/atlast-console.dir/atlmain.c.o -o atlast-console  libatlast.a -lm 
