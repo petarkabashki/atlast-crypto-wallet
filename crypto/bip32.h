@@ -51,7 +51,8 @@ typedef struct {
 
   uint8_t public_key[33];
   const curve_info *curve;
-} HDNode;
+} HDNode; // 1 + 1 + 8 + 8 + 8 + 9 + 1 = 36 * 4 = 144
+//4 + 4 + 32 + 32 + 32 + 33 + 4 
 
 int hdnode_from_xpub(uint32_t depth, uint32_t child_num,
                      const uint8_t *chain_code, const uint8_t *public_key,

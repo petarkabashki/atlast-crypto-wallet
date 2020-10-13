@@ -8,6 +8,14 @@ type
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \
+\ get word from index
+\
+: t 1000 5 do i MNE.GWD type cr loop ;
+t
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\
 \ mnemonic to seed 
 \ ( mnemonic pass seed -- ) 
 \
@@ -16,57 +24,107 @@ variable p
 10 allot
 "password" p s!
 variable seed
-64 allot 
+65 allot 
 p seed mne>seed
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \
-\ get word from index
-\
-: t 1000 5 do i MNE.GWD type cr loop ;
-t
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\
 \ node from seed
-\ ( node curve seed_len seed -- res )
+\ HND<SEED  ( node curve seed_len seed -- res )
 \
+\variable hdn
+\150 allot
+
+150 string hdn
+20 string crv
+"secp256k1" crv s!
+hdn crv seed dup strlen swap HND<SEED
 
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\ hdnode_fingerprint
+\ HND.FGPR  ( node -- res )
 \
 \
+hdn HND.FGPR
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\ hdnode_serialize_public
+\ HND.SRL-PBL  ( node fingerprint version str strsize -- res )
 \
 \
+120 string despb
+hdn dup HND.FGPR 1 despb 120 HND.SRL-PBL
+drop 
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\ hdnode_serialize_private
+\ HND.SRL-PRV  ( node fingerprint version str strsize -- res )
+\
+\
+120 string despr
+hdn dup HND.FGPR 1 despr 120 HND.SRL-PRV
+drop
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\ hdnode_deserialize_public
+\ HND.DSR-PBL  ( str version curve node fingerprint -- res )
+\
+variable hdn 156 allot
+variable fingerprint 
+471202769 fingerprint !
+115 string ps
+"1119JufC6bG4TR8BadziHSR7aNsF6Rze3LWnXNqjXhftagphwGhsvaAZVPLC9camdWxxeYeAcWkXkhXAmpd3SuvY7YB9hMquFbvr7j2ZY7K9Gs" ps s!
+20 string crv
+"secp256k1" crv s!
+ps 1 crv hdn fingerprint HND.DSR-PBL
+drop
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\ hdnode_deserialize_private
+\ HND.DSR-PRV  (  str version curve node fingerprint -- res  )
+\
+\variable hdn HDN.NEW
+variable hdn 156 allot
+variable fingerprint 
+471202769 fingerprint !
+115 string pvks
+"1119JufC6bG4TR8BadziHSR7aNsF6Rze3LWnXNqjXhftagphwGhsvaAZVPLC4ipiHpNVVjWXfFKcaD67yBJ6ACyeuDqAN4YMMibNnrCDuYuG6F" pvks s!
+20 string crv
+"secp256k1" crv s!
+pvks 1 crv hdn fingerprint HND.DSR-PRV
+drop
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\ hdnode_private_ckd
+\ HND.PRCKD  ( i node -- res )
+\
+\
+0 hdn HND.PRCKD
 
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\ hdnode_public_ckd
+\ HND.PBCKD  (  i node-- res  ) ??? returns 0
 \
 \
-\
-\
-
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\
-\
-\
-\
-
+1 hdn HND.PBCKD
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\ hdnode_fill_public_key
+\ HND.FILL-PBK  ( i node-- res )
 \
 \
-\
-\
-
+1 hdn HND.FILL-PBK
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\ hdnode_get_address
+\ HND.ADDR  ( node version addr addrsize )
 \
 \
-\
-\
-
+200 string addr
+hdn 0 addr 200 HND.ADDR
+: tta cr 10 0 do hdn i addr 200 HND.ADDR addr type cr loop ;
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \ base32_encoded_length

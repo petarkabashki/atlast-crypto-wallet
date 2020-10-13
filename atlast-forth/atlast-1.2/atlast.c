@@ -115,7 +115,7 @@ typedef enum {False = 0, True = 1} Boolean;
 
 atl_int atl_stklen = 100;	      /* Evaluation stack length */
 atl_int atl_rstklen = 100;	      /* Return stack length */
-atl_int atl_heaplen = 1000;	      /* Heap length */
+atl_int atl_heaplen = 2000;	      /* Heap length */
 atl_int atl_ltempstr = 256;	      /* Temporary string buffer length */
 atl_int atl_ntempstr = 4;	      /* Number of temporary string buffers */
 

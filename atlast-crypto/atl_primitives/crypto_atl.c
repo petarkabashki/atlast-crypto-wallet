@@ -27,6 +27,28 @@
 	Pop;            \
 	__PPPP__S0
 
+prim P_hdn_new()
+{ /* -- hdn */
+// typedef struct {
+//   uint32_t depth;
+//   uint32_t child_num;
+//   uint8_t chain_code[32];
+
+//   uint8_t private_key[32];
+//   uint8_t private_key_extension[32];
+
+//   uint8_t public_key[33];
+//   const curve_info *curve;
+// } HDNode;
+	// HDNode hdn;
+printf("Size of HDNode: %li\n", sizeof(HDNode));
+    size_t n = (sizeof(HDNode) + (sizeof(stackitem) - 1)) / sizeof(stackitem);
+    // Push = (stackitem)hptr;
+printf("Moving hptr from %li to %li by %li", hptr, hptr + n, n);
+    Ho(n);
+    hptr += n;
+}
+
 prim P_mnemonic_generate()
 { /* strength -- res*/
 	Sl(1);
@@ -56,7 +78,7 @@ prim P_mnemonic_to_seed()
 	Hpc(S2);
 	V mnemonic_to_seed(/*const char *mnemonic*/ (char *)S2,
 					   /*const char *passphrase*/ (char *)S1,
-					   /*uint8_t seed[512 / 8]*/ (uint8_t *)S0,
+					   /*uint8_t seed[512 / 8 === 64]*/ (uint8_t *)S0,
 					   NULL);
 	Npop(3);
 }
@@ -225,7 +247,7 @@ prim P_hdnode_sign_digest()
 // }
 
 prim P_hdnode_deserialize_public()
-{ /* str version curve node fingerprint -- res*/
+{ /* str version curve node fingerprint -- res */
 	Sl(5);
 	Hpc(S0);
 	Hpc(S1);
@@ -242,7 +264,7 @@ prim P_hdnode_deserialize_public()
 }
 
 prim P_hdnode_deserialize_private()
-{ /* str version curve node fingerprint -- res*/
+{ /* str version curve node fingerprint -- res */
 	Sl(5);
 	Hpc(S0);
 	Hpc(S1);
@@ -258,27 +280,9 @@ prim P_hdnode_deserialize_private()
 	Push = res;
 }
 
-prim P_hdnode_serialize_private()
-{ /* node fingerprint version str strsize -- res*/
-	Sl(5);
-	Hpc(S0);
-	Hpc(S1);
-	Hpc(S2);
-	Hpc(S4);
-	int res = hdnode_serialize_private(/*HDNode *node*/ (HDNode *)S4,
-									   /*uint32_t fingerprint*/ (int)S3,
-									   /*uint32_t version*/ S2,
-									   /*char *str*/ (char *)S1,
-									   /*int strsize*/ S0);
-
-	Npop(5);
-	Push = res;
-}
-
 prim P_hdnode_serialize_public()
 { /* node fingerprint version str strsize -- res*/
 	Sl(5);
-	Hpc(S0);
 	Hpc(S1);
 	Hpc(S2);
 	Hpc(S4);
@@ -288,12 +292,27 @@ prim P_hdnode_serialize_public()
 									  /*char *str*/ (char *)S1,
 									  /*int strsize*/ S0);
 
-	Npop(5);
-	Push = res;
+	Npop(4);
+	__S0 res;
+}
+
+prim P_hdnode_serialize_private()
+{ /* node fingerprint version str strsize -- res */
+	Sl(5);
+	Hpc(S1);
+	Hpc(S4);
+	int res = hdnode_serialize_private(/*HDNode *node*/ (HDNode *)S4,
+									   /*uint32_t fingerprint*/ (int)S3,
+									   /*uint32_t version*/ S2,
+									   /*char *str*/ (char *)S1,
+									   /*int strsize*/ S0);
+
+	Npop(4);
+	__S0 res;
 }
 
 prim P_hdnode_get_shared_key()
-{ /* node peer_public_key session_key result_size -- res*/
+{ /* node peer_public_key session_key result_size -- res */
 	Sl(4);
 	Hpc(S0);
 	Hpc(S1);
@@ -304,8 +323,8 @@ prim P_hdnode_get_shared_key()
 									/*uint8_t *session_key*/ (uint8_t *)S1,
 									/*int *result_size*/ (int *)S0);
 
-	Npop(4);
-	Push = res;
+	Npop(3);
+	__S0 res;
 }
 /////////////////////////////////////
 // BASE32
@@ -385,6 +404,7 @@ prim P_base32_decoded_length()
 }
 
 struct primfcn crypto_fcns[] = {
+	{"0HDN.NEW", P_hdn_new},
 	{"0MNE.GEN", P_mnemonic_generate},
 	{"0MNE<DATA", P_mnemonic_from_data},
 	{"0MNE.CHECK", P_mnemonic_check},

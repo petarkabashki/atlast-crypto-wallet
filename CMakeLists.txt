@@ -8,7 +8,7 @@ project(atlast-crypto VERSION 0.1.0)
 
 add_subdirectory(crypto)
 add_subdirectory("atlast-forth/atlast-1.2")
-add_subdirectory(main)
+add_subdirectory(atlast-crypto)
 
 # set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 # set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

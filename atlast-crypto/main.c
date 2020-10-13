@@ -7,6 +7,7 @@
 #include <signal.h>
 #include "atldef.h"
 #include "atl_primitives/crypto_atl.h"
+#include "bip32.h"
 
 #define FALSE 0
 #define TRUE 1
@@ -35,6 +36,7 @@ static void ctrlc(sig) int sig;
 int main(argc, argv) int argc;
 char *argv[];
 {
+	// printf("Size of HDNode: %li\n", sizeof(HDNode));
 	atl_init();
 
 	atl_primdef(crypto_fcns);
@@ -101,7 +103,7 @@ char *argv[];
 		}
 		else
 		{
-			char fn[132];
+			char fn[256];
 
 			if (fname)
 			{
