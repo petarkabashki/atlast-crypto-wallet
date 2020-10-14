@@ -1,53 +1,21 @@
 
 #include "atldef.h"
 
-#include "bip39.h"
 #include <string.h>
 #include "crypto_atl.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include "bip32.h"
 #include "base32.h"
+#include "bip39.h"
 
-#define V (void)/* Force result to void */
-#define __S0 S0 = (stackitem)
-#define __P__S0 \
-	Pop;        \
-	__S0
-#define __PP__S0 \
-	Pop;         \
-	__P__S0
-#define __PPP__S0 \
-	Pop;          \
-	__PP__S0
-#define __PPPP__S0 \
-	Pop;           \
-	__PPP__S0
-#define __PPPPP__S0 \
-	Pop;            \
-	__PPPP__S0
-
-prim P_hdn_new()
-{ /* -- hdn */
-// typedef struct {
-//   uint32_t depth;
-//   uint32_t child_num;
-//   uint8_t chain_code[32];
-
-//   uint8_t private_key[32];
-//   uint8_t private_key_extension[32];
-
-//   uint8_t public_key[33];
-//   const curve_info *curve;
-// } HDNode;
-	// HDNode hdn;
-printf("Size of HDNode: %li\n", sizeof(HDNode));
-    size_t n = (sizeof(HDNode) + (sizeof(stackitem) - 1)) / sizeof(stackitem);
-    // Push = (stackitem)hptr;
-printf("Moving hptr from %li to %li by %li", hptr, hptr + n, n);
-    Ho(n);
-    hptr += n;
-}
+// prim P_hdn_new()
+// { /* -- hdn */
+//     size_t n = (sizeof(HDNode) + (sizeof(stackitem) - 1)) / sizeof(stackitem);
+//     Push = (stackitem)hptr;
+//     Ho(n);
+//     hptr += n;
+// }
 
 prim P_mnemonic_generate()
 { /* strength -- res*/
@@ -404,7 +372,7 @@ prim P_base32_decoded_length()
 }
 
 struct primfcn crypto_fcns[] = {
-	{"0HDN.NEW", P_hdn_new},
+	// {"0HDN.NEW", P_hdn_new},
 	{"0MNE.GEN", P_mnemonic_generate},
 	{"0MNE<DATA", P_mnemonic_from_data},
 	{"0MNE.CHECK", P_mnemonic_check},
