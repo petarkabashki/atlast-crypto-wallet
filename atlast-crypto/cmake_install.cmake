@@ -1,4 +1,4 @@
-# Install script for directory: /home/grenada/proj/atlast-crypto/main
+# Install script for directory: /home/grenada/proj/atlast-crypto/atlast-crypto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
