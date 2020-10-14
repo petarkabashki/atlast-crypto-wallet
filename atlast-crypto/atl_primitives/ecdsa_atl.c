@@ -309,12 +309,6 @@ prim P_uncompress_coords()
 	Npop(2);
 }
 
-/*
-
-void uncompress_coords(const ecdsa_curve *curve, uint8_t odd,
-                       const bignum256 *x, bignum256 *y);
-*/
-
 struct primfcn ecdsa_fcns[] = {
 	{"0ECD.PCPY", P_point_copy},
 	{"0ECD.P+", P_point_add},
