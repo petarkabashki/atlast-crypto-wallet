@@ -3,11 +3,9 @@ cmake_minimum_required(VERSION 3.18)
 
 project(atlast-crypto VERSION 0.0.1)
 # use this to generate file list: 
-#  ls ./atl_primitives/*wrap.c | sed -e 's_\./_"_' |  sed -e 's_$_"_'
+#  ls ./atl_primitives/*wrap.c | sort | uniq | sed -e 's_\./_"_' |  sed -e 's_$_"_'
 add_executable(${PROJECT_NAME}
     main.c
-    # "atl_primitives/crypto_atl.c"
-    # "atl_primitives/ecdsa_atl.c"
     "atl_primitives/aes_wrap.c"
     "atl_primitives/base32_wrap.c"
     "atl_primitives/base58_wrap.c"
@@ -22,12 +20,14 @@ add_executable(${PROJECT_NAME}
     "atl_primitives/sha3_wrap.c"
     "atl_primitives/slip39_wrap.c"
     
+    
+    "atl_primitives/common_atl.c"
 )
 
 target_link_libraries(${PROJECT_NAME} atlast crypto m)
 
-
+# -g -Wall -DMEMSTAT -DALIGNMENT -DEXPORT -DREADONLYSTRINGS
 add_definitions(-g -Wall -DMEMSTAT -DALIGNMENT -DEXPORT -DREADONLYSTRINGS -DNOMEMCHECK)
-
+# -DNOMEMCHECK
 include_directories("../atlast-forth/atlast-1.2")
 include_directories("../crypto")

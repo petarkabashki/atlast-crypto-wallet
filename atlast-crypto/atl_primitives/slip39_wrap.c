@@ -138,7 +138,7 @@
  
 void _wrap_get_word() {
   Sl(1);
-  uint16_t arg1 = (uint16_t) S0;
+  uint16_t arg1 = (uint16_t) stk[-1];
   char * result = (char *)get_word(arg1);
   Npop(1);
   Push = (stackitem)result;
@@ -147,10 +147,10 @@ void _wrap_get_word() {
 
 void _wrap_word_index() {
   Sl(3);
-  Hpc(S0);
-  uint16_t *arg1 = (uint16_t *) S0;
-  char *arg2 = (char *) S1;
-  uint8_t arg3 = (uint8_t) S2;
+  Hpc(stk[-3]);
+  uint16_t *arg1 = (uint16_t *) stk[-3];
+  char *arg2 = (char *) stk[-2];
+  uint8_t arg3 = (uint8_t) stk[-1];
   bool result = (bool)word_index(arg1,(char const *)arg2,arg3);
   Npop(3);
   Push = (stackitem)result;
@@ -159,7 +159,7 @@ void _wrap_word_index() {
 
 void _wrap_compute_mask() {
   Sl(1);
-  uint16_t arg1 = (uint16_t) S0;
+  uint16_t arg1 = (uint16_t) stk[-1];
   uint16_t result = compute_mask(arg1);
   Npop(1);
   Push = (stackitem)result;
@@ -168,7 +168,7 @@ void _wrap_compute_mask() {
 
 void _wrap_button_sequence_to_word() {
   Sl(1);
-  uint16_t arg1 = (uint16_t) S0;
+  uint16_t arg1 = (uint16_t) stk[-1];
   char * result = (char *)button_sequence_to_word(arg1);
   Npop(1);
   Push = (stackitem)result;
@@ -177,8 +177,8 @@ void _wrap_button_sequence_to_word() {
 
 void _wrap_find() {
   Sl(2);
-  uint16_t arg1 = (uint16_t) S0;
-  bool arg2 = (bool) S1;
+  uint16_t arg1 = (uint16_t) stk[-2];
+  bool arg2 = (bool) stk[-1];
   uint16_t result = find(arg1,arg2);
   Npop(2);
   Push = (stackitem)result;
@@ -186,10 +186,10 @@ void _wrap_find() {
 
 
 struct primfcn slip39_fcns[] = {
-	{"0get_word", _wrap_get_word},
-	{"0word_index", _wrap_word_index},
-	{"0compute_mask", _wrap_compute_mask},
-	{"0button_sequence_to_word", _wrap_button_sequence_to_word},
-	{"0find", _wrap_find},
+	{"0GET_WORD", _wrap_get_word},
+	{"0WORD_INDEX", _wrap_word_index},
+	{"0COMPUTE_MASK", _wrap_compute_mask},
+	{"0BUTTON_SEQUENCE_TO_WORD", _wrap_button_sequence_to_word},
+	{"0FIND", _wrap_find},
 {NULL, (codeptr)0}};
 

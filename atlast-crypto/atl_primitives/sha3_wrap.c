@@ -138,8 +138,8 @@
  
 void _wrap_sha3_224_Init() {
   Sl(1);
-  Hpc(S0);
-  SHA3_CTX *arg1 = (SHA3_CTX *) S0;
+  Hpc(stk[-1]);
+  SHA3_CTX *arg1 = (SHA3_CTX *) stk[-1];
   sha3_224_Init(arg1);
   Npop(1);
 }
@@ -147,8 +147,8 @@ void _wrap_sha3_224_Init() {
 
 void _wrap_sha3_256_Init() {
   Sl(1);
-  Hpc(S0);
-  SHA3_CTX *arg1 = (SHA3_CTX *) S0;
+  Hpc(stk[-1]);
+  SHA3_CTX *arg1 = (SHA3_CTX *) stk[-1];
   sha3_256_Init(arg1);
   Npop(1);
 }
@@ -156,8 +156,8 @@ void _wrap_sha3_256_Init() {
 
 void _wrap_sha3_384_Init() {
   Sl(1);
-  Hpc(S0);
-  SHA3_CTX *arg1 = (SHA3_CTX *) S0;
+  Hpc(stk[-1]);
+  SHA3_CTX *arg1 = (SHA3_CTX *) stk[-1];
   sha3_384_Init(arg1);
   Npop(1);
 }
@@ -165,8 +165,8 @@ void _wrap_sha3_384_Init() {
 
 void _wrap_sha3_512_Init() {
   Sl(1);
-  Hpc(S0);
-  SHA3_CTX *arg1 = (SHA3_CTX *) S0;
+  Hpc(stk[-1]);
+  SHA3_CTX *arg1 = (SHA3_CTX *) stk[-1];
   sha3_512_Init(arg1);
   Npop(1);
 }
@@ -174,11 +174,11 @@ void _wrap_sha3_512_Init() {
 
 void _wrap_sha3_Update() {
   Sl(3);
-  Hpc(S0);
-  SHA3_CTX *arg1 = (SHA3_CTX *) S0;
-  Hpc(S1);
-  unsigned char *arg2 = (unsigned char *) S1;
-  size_t arg3 = (size_t) S2;
+  Hpc(stk[-3]);
+  SHA3_CTX *arg1 = (SHA3_CTX *) stk[-3];
+  Hpc(stk[-2]);
+  unsigned char *arg2 = (unsigned char *) stk[-2];
+  size_t arg3 = (size_t) stk[-1];
   sha3_Update(arg1,(unsigned char const *)arg2,arg3);
   Npop(3);
 }
@@ -186,10 +186,10 @@ void _wrap_sha3_Update() {
 
 void _wrap_sha3_Final() {
   Sl(2);
-  Hpc(S0);
-  SHA3_CTX *arg1 = (SHA3_CTX *) S0;
-  Hpc(S1);
-  unsigned char *arg2 = (unsigned char *) S1;
+  Hpc(stk[-2]);
+  SHA3_CTX *arg1 = (SHA3_CTX *) stk[-2];
+  Hpc(stk[-1]);
+  unsigned char *arg2 = (unsigned char *) stk[-1];
   sha3_Final(arg1,arg2);
   Npop(2);
 }
@@ -197,11 +197,11 @@ void _wrap_sha3_Final() {
 
 void _wrap_sha3_256() {
   Sl(3);
-  Hpc(S0);
-  unsigned char *arg1 = (unsigned char *) S0;
-  size_t arg2 = (size_t) S1;
-  Hpc(S2);
-  unsigned char *arg3 = (unsigned char *) S2;
+  Hpc(stk[-3]);
+  unsigned char *arg1 = (unsigned char *) stk[-3];
+  size_t arg2 = (size_t) stk[-2];
+  Hpc(stk[-1]);
+  unsigned char *arg3 = (unsigned char *) stk[-1];
   sha3_256((unsigned char const *)arg1,arg2,arg3);
   Npop(3);
 }
@@ -209,24 +209,24 @@ void _wrap_sha3_256() {
 
 void _wrap_sha3_512() {
   Sl(3);
-  Hpc(S0);
-  unsigned char *arg1 = (unsigned char *) S0;
-  size_t arg2 = (size_t) S1;
-  Hpc(S2);
-  unsigned char *arg3 = (unsigned char *) S2;
+  Hpc(stk[-3]);
+  unsigned char *arg1 = (unsigned char *) stk[-3];
+  size_t arg2 = (size_t) stk[-2];
+  Hpc(stk[-1]);
+  unsigned char *arg3 = (unsigned char *) stk[-1];
   sha3_512((unsigned char const *)arg1,arg2,arg3);
   Npop(3);
 }
 
 
 struct primfcn sha3_fcns[] = {
-	{"0sha3_224_Init", _wrap_sha3_224_Init},
-	{"0sha3_256_Init", _wrap_sha3_256_Init},
-	{"0sha3_384_Init", _wrap_sha3_384_Init},
-	{"0sha3_512_Init", _wrap_sha3_512_Init},
-	{"0sha3_Update", _wrap_sha3_Update},
-	{"0sha3_Final", _wrap_sha3_Final},
-	{"0sha3_256", _wrap_sha3_256},
-	{"0sha3_512", _wrap_sha3_512},
+	{"0SHA3_224_INIT", _wrap_sha3_224_Init},
+	{"0SHA3_256_INIT", _wrap_sha3_256_Init},
+	{"0SHA3_384_INIT", _wrap_sha3_384_Init},
+	{"0SHA3_512_INIT", _wrap_sha3_512_Init},
+	{"0SHA3_UPDATE", _wrap_sha3_Update},
+	{"0SHA3_FINAL", _wrap_sha3_Final},
+	{"0SHA3_256", _wrap_sha3_256},
+	{"0SHA3_512", _wrap_sha3_512},
 {NULL, (codeptr)0}};
 

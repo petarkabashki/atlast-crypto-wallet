@@ -138,12 +138,12 @@
  
 void _wrap_base32_encode() {
   Sl(5);
-  Hpc(S0);
-  uint8_t *arg1 = (uint8_t *) S0;
-  size_t arg2 = (size_t) S1;
-  char *arg3 = (char *) S2;
-  size_t arg4 = (size_t) S3;
-  char *arg5 = (char *) S4;
+  Hpc(stk[-5]);
+  uint8_t *arg1 = (uint8_t *) stk[-5];
+  size_t arg2 = (size_t) stk[-4];
+  char *arg3 = (char *) stk[-3];
+  size_t arg4 = (size_t) stk[-2];
+  char *arg5 = (char *) stk[-1];
   char * result = (char *)base32_encode((uint8_t const *)arg1,arg2,arg3,arg4,(char const *)arg5);
   Npop(5);
   Push = (stackitem)result;
@@ -152,11 +152,11 @@ void _wrap_base32_encode() {
 
 void _wrap_base32_encode_unsafe() {
   Sl(3);
-  Hpc(S0);
-  uint8_t *arg1 = (uint8_t *) S0;
-  size_t arg2 = (size_t) S1;
-  Hpc(S2);
-  uint8_t *arg3 = (uint8_t *) S2;
+  Hpc(stk[-3]);
+  uint8_t *arg1 = (uint8_t *) stk[-3];
+  size_t arg2 = (size_t) stk[-2];
+  Hpc(stk[-1]);
+  uint8_t *arg3 = (uint8_t *) stk[-1];
   base32_encode_unsafe((uint8_t const *)arg1,arg2,arg3);
   Npop(3);
 }
@@ -164,12 +164,12 @@ void _wrap_base32_encode_unsafe() {
 
 void _wrap_base32_decode() {
   Sl(5);
-  char *arg1 = (char *) S0;
-  size_t arg2 = (size_t) S1;
-  Hpc(S2);
-  uint8_t *arg3 = (uint8_t *) S2;
-  size_t arg4 = (size_t) S3;
-  char *arg5 = (char *) S4;
+  char *arg1 = (char *) stk[-5];
+  size_t arg2 = (size_t) stk[-4];
+  Hpc(stk[-3]);
+  uint8_t *arg3 = (uint8_t *) stk[-3];
+  size_t arg4 = (size_t) stk[-2];
+  char *arg5 = (char *) stk[-1];
   uint8_t * result = (uint8_t *)base32_decode((char const *)arg1,arg2,arg3,arg4,(char const *)arg5);
   Npop(5);
   Push = (stackitem)result;
@@ -178,12 +178,12 @@ void _wrap_base32_decode() {
 
 void _wrap_base32_decode_unsafe() {
   Sl(4);
-  Hpc(S0);
-  uint8_t *arg1 = (uint8_t *) S0;
-  size_t arg2 = (size_t) S1;
-  Hpc(S2);
-  uint8_t *arg3 = (uint8_t *) S2;
-  char *arg4 = (char *) S3;
+  Hpc(stk[-4]);
+  uint8_t *arg1 = (uint8_t *) stk[-4];
+  size_t arg2 = (size_t) stk[-3];
+  Hpc(stk[-2]);
+  uint8_t *arg3 = (uint8_t *) stk[-2];
+  char *arg4 = (char *) stk[-1];
   bool result = (bool)base32_decode_unsafe((uint8_t const *)arg1,arg2,arg3,(char const *)arg4);
   Npop(4);
   Push = (stackitem)result;
@@ -192,7 +192,7 @@ void _wrap_base32_decode_unsafe() {
 
 void _wrap_base32_encoded_length() {
   Sl(1);
-  size_t arg1 = (size_t) S0;
+  size_t arg1 = (size_t) stk[-1];
   size_t result = base32_encoded_length(arg1);
   Npop(1);
   Push = (stackitem)result;
@@ -201,7 +201,7 @@ void _wrap_base32_encoded_length() {
 
 void _wrap_base32_decoded_length() {
   Sl(1);
-  size_t arg1 = (size_t) S0;
+  size_t arg1 = (size_t) stk[-1];
   size_t result = base32_decoded_length(arg1);
   Npop(1);
   Push = (stackitem)result;
@@ -209,11 +209,11 @@ void _wrap_base32_decoded_length() {
 
 
 struct primfcn base32_fcns[] = {
-	{"0base32_encode", _wrap_base32_encode},
-	{"0base32_encode_unsafe", _wrap_base32_encode_unsafe},
-	{"0base32_decode", _wrap_base32_decode},
-	{"0base32_decode_unsafe", _wrap_base32_decode_unsafe},
-	{"0base32_encoded_length", _wrap_base32_encoded_length},
-	{"0base32_decoded_length", _wrap_base32_decoded_length},
+	{"0BASE32_ENCODE", _wrap_base32_encode},
+	{"0BASE32_ENCODE_UNSAFE", _wrap_base32_encode_unsafe},
+	{"0BASE32_DECODE", _wrap_base32_decode},
+	{"0BASE32_DECODE_UNSAFE", _wrap_base32_decode_unsafe},
+	{"0BASE32_ENCODED_LENGTH", _wrap_base32_encoded_length},
+	{"0BASE32_DECODED_LENGTH", _wrap_base32_decoded_length},
 {NULL, (codeptr)0}};
 

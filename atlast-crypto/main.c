@@ -7,8 +7,11 @@
 #include <signal.h>
 #include "atldef.h"
 
+
+#include "atl_primitives/common_atl.h"
+
 // generate with
-//  ls ./atl_primitives/*wrap.h | sed -e 's_\./_#include "_' |  sed -e 's_$_"_'
+// ls ./atl_primitives/*wrap.h | sort | uniq | sed -e 's_\./_#include "_' |  sed -e 's_$_"_'
 
 #include "atl_primitives/aes_wrap.h"
 #include "atl_primitives/base32_wrap.h"
@@ -55,37 +58,26 @@ char *argv[];
 {
 	// printf("Size of HDNode: %li\n", sizeof(HDNode));
 	atl_init();
-// generated with
-// rg -INoe '(\w+_fcns)\[' ./atl_primitives/ -r '$1' | sed -e 's_.*_atl\_primdef("\0");_'
 
-atl_primdef("sha2_fcns");
-atl_primdef("hmac_drbg_fcns");
-atl_primdef("base58_fcns");
-atl_primdef("bip32_fcns");
-atl_primdef("hmac_drbg_fcns");
-atl_primdef("sha3_fcns");
-atl_primdef("hasher_fcns");
-atl_primdef("base32_fcns");
-atl_primdef("base58_fcns");
-atl_primdef("bip39_fcns");
-atl_primdef("hmac_fcns");
-atl_primdef("ecdsa_fcns");
-atl_primdef("bignum_fcns");
-atl_primdef("bip32_fcns");
-atl_primdef("slip39_fcns");
-atl_primdef("sha3_fcns");
-atl_primdef("bignum_fcns");
-atl_primdef("slip39_fcns");
-atl_primdef("ecdsa_fcns");
-atl_primdef("aes_fcns");
-atl_primdef("ecdsa_fcns");
-atl_primdef("bip39_fcns");
-atl_primdef("hasher_fcns");
-atl_primdef("sha2_fcns");
-atl_primdef("ecdsa_fcns");
-atl_primdef("hmac_fcns");
-atl_primdef("base32_fcns");
-atl_primdef("aes_fcns");
+// generated with
+// rg -INoe '(\w+_fcns)\[' ./atl_primitives/ -r '$1' | sort | uniq | sed -e 's_.*_atl\_primdef(\0);_'
+
+atl_primdef(common_fcns);
+
+atl_primdef(aes_fcns);
+atl_primdef(base32_fcns);
+atl_primdef(base58_fcns);
+atl_primdef(bignum_fcns);
+atl_primdef(bip32_fcns);
+atl_primdef(bip39_fcns);
+atl_primdef(ecdsa_fcns);
+atl_primdef(hasher_fcns);
+atl_primdef(hmac_drbg_fcns);
+atl_primdef(hmac_fcns);
+atl_primdef(sha2_fcns);
+atl_primdef(sha3_fcns);
+atl_primdef(slip39_fcns);
+
 
 
 	int i;

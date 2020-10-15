@@ -138,12 +138,12 @@
  
 void _wrap_sha1_Transform() {
   Sl(3);
-  Hpc(S0);
-  uint32_t *arg1 = (uint32_t *) S0;
-  Hpc(S1);
-  uint32_t *arg2 = (uint32_t *) S1;
-  Hpc(S2);
-  uint32_t *arg3 = (uint32_t *) S2;
+  Hpc(stk[-3]);
+  uint32_t *arg1 = (uint32_t *) stk[-3];
+  Hpc(stk[-2]);
+  uint32_t *arg2 = (uint32_t *) stk[-2];
+  Hpc(stk[-1]);
+  uint32_t *arg3 = (uint32_t *) stk[-1];
   sha1_Transform((uint32_t const *)arg1,(uint32_t const *)arg2,arg3);
   Npop(3);
 }
@@ -151,8 +151,8 @@ void _wrap_sha1_Transform() {
 
 void _wrap_sha1_Init() {
   Sl(1);
-  Hpc(S0);
-  SHA1_CTX *arg1 = (SHA1_CTX *) S0;
+  Hpc(stk[-1]);
+  SHA1_CTX *arg1 = (SHA1_CTX *) stk[-1];
   sha1_Init(arg1);
   Npop(1);
 }
@@ -160,11 +160,11 @@ void _wrap_sha1_Init() {
 
 void _wrap_sha1_Update() {
   Sl(3);
-  Hpc(S0);
-  SHA1_CTX *arg1 = (SHA1_CTX *) S0;
-  Hpc(S1);
-  uint8_t *arg2 = (uint8_t *) S1;
-  size_t arg3 = (size_t) S2;
+  Hpc(stk[-3]);
+  SHA1_CTX *arg1 = (SHA1_CTX *) stk[-3];
+  Hpc(stk[-2]);
+  uint8_t *arg2 = (uint8_t *) stk[-2];
+  size_t arg3 = (size_t) stk[-1];
   sha1_Update(arg1,(uint8_t const *)arg2,arg3);
   Npop(3);
 }
@@ -172,9 +172,9 @@ void _wrap_sha1_Update() {
 
 void _wrap_sha1_Final() {
   Sl(2);
-  Hpc(S0);
-  SHA1_CTX *arg1 = (SHA1_CTX *) S0;
-  uint8_t *arg2 = (uint8_t *) (uint8_t *)S1;
+  Hpc(stk[-2]);
+  SHA1_CTX *arg1 = (SHA1_CTX *) stk[-2];
+  uint8_t *arg2 = (uint8_t *) (uint8_t *)stk[-1];
   sha1_Final(arg1,arg2);
   Npop(2);
 }
@@ -182,9 +182,9 @@ void _wrap_sha1_Final() {
 
 void _wrap_sha1_End() {
   Sl(2);
-  Hpc(S0);
-  SHA1_CTX *arg1 = (SHA1_CTX *) S0;
-  char *arg2 = (char *) (char *)S1;
+  Hpc(stk[-2]);
+  SHA1_CTX *arg1 = (SHA1_CTX *) stk[-2];
+  char *arg2 = (char *) (char *)stk[-1];
   char * result = (char *)sha1_End(arg1,arg2);
   Npop(2);
   Push = (stackitem)result;
@@ -193,10 +193,10 @@ void _wrap_sha1_End() {
 
 void _wrap_sha1_Raw() {
   Sl(3);
-  Hpc(S0);
-  uint8_t *arg1 = (uint8_t *) S0;
-  size_t arg2 = (size_t) S1;
-  uint8_t *arg3 = (uint8_t *) (uint8_t *)S2;
+  Hpc(stk[-3]);
+  uint8_t *arg1 = (uint8_t *) stk[-3];
+  size_t arg2 = (size_t) stk[-2];
+  uint8_t *arg3 = (uint8_t *) (uint8_t *)stk[-1];
   sha1_Raw((uint8_t const *)arg1,arg2,arg3);
   Npop(3);
 }
@@ -204,10 +204,10 @@ void _wrap_sha1_Raw() {
 
 void _wrap_sha1_Data() {
   Sl(3);
-  Hpc(S0);
-  uint8_t *arg1 = (uint8_t *) S0;
-  size_t arg2 = (size_t) S1;
-  char *arg3 = (char *) (char *)S2;
+  Hpc(stk[-3]);
+  uint8_t *arg1 = (uint8_t *) stk[-3];
+  size_t arg2 = (size_t) stk[-2];
+  char *arg3 = (char *) (char *)stk[-1];
   char * result = (char *)sha1_Data((uint8_t const *)arg1,arg2,arg3);
   Npop(3);
   Push = (stackitem)result;
@@ -216,12 +216,12 @@ void _wrap_sha1_Data() {
 
 void _wrap_sha256_Transform() {
   Sl(3);
-  Hpc(S0);
-  uint32_t *arg1 = (uint32_t *) S0;
-  Hpc(S1);
-  uint32_t *arg2 = (uint32_t *) S1;
-  Hpc(S2);
-  uint32_t *arg3 = (uint32_t *) S2;
+  Hpc(stk[-3]);
+  uint32_t *arg1 = (uint32_t *) stk[-3];
+  Hpc(stk[-2]);
+  uint32_t *arg2 = (uint32_t *) stk[-2];
+  Hpc(stk[-1]);
+  uint32_t *arg3 = (uint32_t *) stk[-1];
   sha256_Transform((uint32_t const *)arg1,(uint32_t const *)arg2,arg3);
   Npop(3);
 }
@@ -229,8 +229,8 @@ void _wrap_sha256_Transform() {
 
 void _wrap_sha256_Init() {
   Sl(1);
-  Hpc(S0);
-  SHA256_CTX *arg1 = (SHA256_CTX *) S0;
+  Hpc(stk[-1]);
+  SHA256_CTX *arg1 = (SHA256_CTX *) stk[-1];
   sha256_Init(arg1);
   Npop(1);
 }
@@ -238,11 +238,11 @@ void _wrap_sha256_Init() {
 
 void _wrap_sha256_Update() {
   Sl(3);
-  Hpc(S0);
-  SHA256_CTX *arg1 = (SHA256_CTX *) S0;
-  Hpc(S1);
-  uint8_t *arg2 = (uint8_t *) S1;
-  size_t arg3 = (size_t) S2;
+  Hpc(stk[-3]);
+  SHA256_CTX *arg1 = (SHA256_CTX *) stk[-3];
+  Hpc(stk[-2]);
+  uint8_t *arg2 = (uint8_t *) stk[-2];
+  size_t arg3 = (size_t) stk[-1];
   sha256_Update(arg1,(uint8_t const *)arg2,arg3);
   Npop(3);
 }
@@ -250,9 +250,9 @@ void _wrap_sha256_Update() {
 
 void _wrap_sha256_Final() {
   Sl(2);
-  Hpc(S0);
-  SHA256_CTX *arg1 = (SHA256_CTX *) S0;
-  uint8_t *arg2 = (uint8_t *) (uint8_t *)S1;
+  Hpc(stk[-2]);
+  SHA256_CTX *arg1 = (SHA256_CTX *) stk[-2];
+  uint8_t *arg2 = (uint8_t *) (uint8_t *)stk[-1];
   sha256_Final(arg1,arg2);
   Npop(2);
 }
@@ -260,9 +260,9 @@ void _wrap_sha256_Final() {
 
 void _wrap_sha256_End() {
   Sl(2);
-  Hpc(S0);
-  SHA256_CTX *arg1 = (SHA256_CTX *) S0;
-  char *arg2 = (char *) (char *)S1;
+  Hpc(stk[-2]);
+  SHA256_CTX *arg1 = (SHA256_CTX *) stk[-2];
+  char *arg2 = (char *) (char *)stk[-1];
   char * result = (char *)sha256_End(arg1,arg2);
   Npop(2);
   Push = (stackitem)result;
@@ -271,10 +271,10 @@ void _wrap_sha256_End() {
 
 void _wrap_sha256_Raw() {
   Sl(3);
-  Hpc(S0);
-  uint8_t *arg1 = (uint8_t *) S0;
-  size_t arg2 = (size_t) S1;
-  uint8_t *arg3 = (uint8_t *) (uint8_t *)S2;
+  Hpc(stk[-3]);
+  uint8_t *arg1 = (uint8_t *) stk[-3];
+  size_t arg2 = (size_t) stk[-2];
+  uint8_t *arg3 = (uint8_t *) (uint8_t *)stk[-1];
   sha256_Raw((uint8_t const *)arg1,arg2,arg3);
   Npop(3);
 }
@@ -282,10 +282,10 @@ void _wrap_sha256_Raw() {
 
 void _wrap_sha256_Data() {
   Sl(3);
-  Hpc(S0);
-  uint8_t *arg1 = (uint8_t *) S0;
-  size_t arg2 = (size_t) S1;
-  char *arg3 = (char *) (char *)S2;
+  Hpc(stk[-3]);
+  uint8_t *arg1 = (uint8_t *) stk[-3];
+  size_t arg2 = (size_t) stk[-2];
+  char *arg3 = (char *) (char *)stk[-1];
   char * result = (char *)sha256_Data((uint8_t const *)arg1,arg2,arg3);
   Npop(3);
   Push = (stackitem)result;
@@ -294,12 +294,12 @@ void _wrap_sha256_Data() {
 
 void _wrap_sha512_Transform() {
   Sl(3);
-  Hpc(S0);
-  uint64_t *arg1 = (uint64_t *) S0;
-  Hpc(S1);
-  uint64_t *arg2 = (uint64_t *) S1;
-  Hpc(S2);
-  uint64_t *arg3 = (uint64_t *) S2;
+  Hpc(stk[-3]);
+  uint64_t *arg1 = (uint64_t *) stk[-3];
+  Hpc(stk[-2]);
+  uint64_t *arg2 = (uint64_t *) stk[-2];
+  Hpc(stk[-1]);
+  uint64_t *arg3 = (uint64_t *) stk[-1];
   sha512_Transform((uint64_t const *)arg1,(uint64_t const *)arg2,arg3);
   Npop(3);
 }
@@ -307,8 +307,8 @@ void _wrap_sha512_Transform() {
 
 void _wrap_sha512_Init() {
   Sl(1);
-  Hpc(S0);
-  SHA512_CTX *arg1 = (SHA512_CTX *) S0;
+  Hpc(stk[-1]);
+  SHA512_CTX *arg1 = (SHA512_CTX *) stk[-1];
   sha512_Init(arg1);
   Npop(1);
 }
@@ -316,11 +316,11 @@ void _wrap_sha512_Init() {
 
 void _wrap_sha512_Update() {
   Sl(3);
-  Hpc(S0);
-  SHA512_CTX *arg1 = (SHA512_CTX *) S0;
-  Hpc(S1);
-  uint8_t *arg2 = (uint8_t *) S1;
-  size_t arg3 = (size_t) S2;
+  Hpc(stk[-3]);
+  SHA512_CTX *arg1 = (SHA512_CTX *) stk[-3];
+  Hpc(stk[-2]);
+  uint8_t *arg2 = (uint8_t *) stk[-2];
+  size_t arg3 = (size_t) stk[-1];
   sha512_Update(arg1,(uint8_t const *)arg2,arg3);
   Npop(3);
 }
@@ -328,9 +328,9 @@ void _wrap_sha512_Update() {
 
 void _wrap_sha512_Final() {
   Sl(2);
-  Hpc(S0);
-  SHA512_CTX *arg1 = (SHA512_CTX *) S0;
-  uint8_t *arg2 = (uint8_t *) (uint8_t *)S1;
+  Hpc(stk[-2]);
+  SHA512_CTX *arg1 = (SHA512_CTX *) stk[-2];
+  uint8_t *arg2 = (uint8_t *) (uint8_t *)stk[-1];
   sha512_Final(arg1,arg2);
   Npop(2);
 }
@@ -338,9 +338,9 @@ void _wrap_sha512_Final() {
 
 void _wrap_sha512_End() {
   Sl(2);
-  Hpc(S0);
-  SHA512_CTX *arg1 = (SHA512_CTX *) S0;
-  char *arg2 = (char *) (char *)S1;
+  Hpc(stk[-2]);
+  SHA512_CTX *arg1 = (SHA512_CTX *) stk[-2];
+  char *arg2 = (char *) (char *)stk[-1];
   char * result = (char *)sha512_End(arg1,arg2);
   Npop(2);
   Push = (stackitem)result;
@@ -349,10 +349,10 @@ void _wrap_sha512_End() {
 
 void _wrap_sha512_Raw() {
   Sl(3);
-  Hpc(S0);
-  uint8_t *arg1 = (uint8_t *) S0;
-  size_t arg2 = (size_t) S1;
-  uint8_t *arg3 = (uint8_t *) (uint8_t *)S2;
+  Hpc(stk[-3]);
+  uint8_t *arg1 = (uint8_t *) stk[-3];
+  size_t arg2 = (size_t) stk[-2];
+  uint8_t *arg3 = (uint8_t *) (uint8_t *)stk[-1];
   sha512_Raw((uint8_t const *)arg1,arg2,arg3);
   Npop(3);
 }
@@ -360,10 +360,10 @@ void _wrap_sha512_Raw() {
 
 void _wrap_sha512_Data() {
   Sl(3);
-  Hpc(S0);
-  uint8_t *arg1 = (uint8_t *) S0;
-  size_t arg2 = (size_t) S1;
-  char *arg3 = (char *) (char *)S2;
+  Hpc(stk[-3]);
+  uint8_t *arg1 = (uint8_t *) stk[-3];
+  size_t arg2 = (size_t) stk[-2];
+  char *arg3 = (char *) (char *)stk[-1];
   char * result = (char *)sha512_Data((uint8_t const *)arg1,arg2,arg3);
   Npop(3);
   Push = (stackitem)result;
@@ -371,26 +371,26 @@ void _wrap_sha512_Data() {
 
 
 struct primfcn sha2_fcns[] = {
-	{"0sha1_Transform", _wrap_sha1_Transform},
-	{"0sha1_Init", _wrap_sha1_Init},
-	{"0sha1_Update", _wrap_sha1_Update},
-	{"0sha1_Final", _wrap_sha1_Final},
-	{"0sha1_End", _wrap_sha1_End},
-	{"0sha1_Raw", _wrap_sha1_Raw},
-	{"0sha1_Data", _wrap_sha1_Data},
-	{"0sha256_Transform", _wrap_sha256_Transform},
-	{"0sha256_Init", _wrap_sha256_Init},
-	{"0sha256_Update", _wrap_sha256_Update},
-	{"0sha256_Final", _wrap_sha256_Final},
-	{"0sha256_End", _wrap_sha256_End},
-	{"0sha256_Raw", _wrap_sha256_Raw},
-	{"0sha256_Data", _wrap_sha256_Data},
-	{"0sha512_Transform", _wrap_sha512_Transform},
-	{"0sha512_Init", _wrap_sha512_Init},
-	{"0sha512_Update", _wrap_sha512_Update},
-	{"0sha512_Final", _wrap_sha512_Final},
-	{"0sha512_End", _wrap_sha512_End},
-	{"0sha512_Raw", _wrap_sha512_Raw},
-	{"0sha512_Data", _wrap_sha512_Data},
+	{"0SHA1_TRANSFORM", _wrap_sha1_Transform},
+	{"0SHA1_INIT", _wrap_sha1_Init},
+	{"0SHA1_UPDATE", _wrap_sha1_Update},
+	{"0SHA1_FINAL", _wrap_sha1_Final},
+	{"0SHA1_END", _wrap_sha1_End},
+	{"0SHA1_RAW", _wrap_sha1_Raw},
+	{"0SHA1_DATA", _wrap_sha1_Data},
+	{"0SHA256_TRANSFORM", _wrap_sha256_Transform},
+	{"0SHA256_INIT", _wrap_sha256_Init},
+	{"0SHA256_UPDATE", _wrap_sha256_Update},
+	{"0SHA256_FINAL", _wrap_sha256_Final},
+	{"0SHA256_END", _wrap_sha256_End},
+	{"0SHA256_RAW", _wrap_sha256_Raw},
+	{"0SHA256_DATA", _wrap_sha256_Data},
+	{"0SHA512_TRANSFORM", _wrap_sha512_Transform},
+	{"0SHA512_INIT", _wrap_sha512_Init},
+	{"0SHA512_UPDATE", _wrap_sha512_Update},
+	{"0SHA512_FINAL", _wrap_sha512_Final},
+	{"0SHA512_END", _wrap_sha512_End},
+	{"0SHA512_RAW", _wrap_sha512_Raw},
+	{"0SHA512_DATA", _wrap_sha512_Data},
 {NULL, (codeptr)0}};
 

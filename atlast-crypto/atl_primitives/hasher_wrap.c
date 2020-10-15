@@ -137,12 +137,12 @@
  
 void _wrap_hasher_InitParam() {
   Sl(4);
-  Hpc(S0);
-  Hasher *arg1 = (Hasher *) S0;
-  HasherType arg2 = (HasherType) S1;
-  Hpc(S2);
-  void *arg3 = (void *) S2;
-  uint32_t arg4 = (uint32_t) S3;
+  Hpc(stk[-4]);
+  Hasher *arg1 = (Hasher *) stk[-4];
+  HasherType arg2 = (HasherType) stk[-3];
+  Hpc(stk[-2]);
+  void *arg3 = (void *) stk[-2];
+  uint32_t arg4 = (uint32_t) stk[-1];
   hasher_InitParam(arg1,arg2,(void const *)arg3,arg4);
   Npop(4);
 }
@@ -150,9 +150,9 @@ void _wrap_hasher_InitParam() {
 
 void _wrap_hasher_Init() {
   Sl(2);
-  Hpc(S0);
-  Hasher *arg1 = (Hasher *) S0;
-  HasherType arg2 = (HasherType) S1;
+  Hpc(stk[-2]);
+  Hasher *arg1 = (Hasher *) stk[-2];
+  HasherType arg2 = (HasherType) stk[-1];
   hasher_Init(arg1,arg2);
   Npop(2);
 }
@@ -160,8 +160,8 @@ void _wrap_hasher_Init() {
 
 void _wrap_hasher_Reset() {
   Sl(1);
-  Hpc(S0);
-  Hasher *arg1 = (Hasher *) S0;
+  Hpc(stk[-1]);
+  Hasher *arg1 = (Hasher *) stk[-1];
   hasher_Reset(arg1);
   Npop(1);
 }
@@ -169,11 +169,11 @@ void _wrap_hasher_Reset() {
 
 void _wrap_hasher_Update() {
   Sl(3);
-  Hpc(S0);
-  Hasher *arg1 = (Hasher *) S0;
-  Hpc(S1);
-  uint8_t *arg2 = (uint8_t *) S1;
-  size_t arg3 = (size_t) S2;
+  Hpc(stk[-3]);
+  Hasher *arg1 = (Hasher *) stk[-3];
+  Hpc(stk[-2]);
+  uint8_t *arg2 = (uint8_t *) stk[-2];
+  size_t arg3 = (size_t) stk[-1];
   hasher_Update(arg1,(uint8_t const *)arg2,arg3);
   Npop(3);
 }
@@ -181,9 +181,9 @@ void _wrap_hasher_Update() {
 
 void _wrap_hasher_Final() {
   Sl(2);
-  Hpc(S0);
-  Hasher *arg1 = (Hasher *) S0;
-  uint8_t *arg2 = (uint8_t *) (uint8_t *)S1;
+  Hpc(stk[-2]);
+  Hasher *arg1 = (Hasher *) stk[-2];
+  uint8_t *arg2 = (uint8_t *) (uint8_t *)stk[-1];
   hasher_Final(arg1,arg2);
   Npop(2);
 }
@@ -191,22 +191,22 @@ void _wrap_hasher_Final() {
 
 void _wrap_hasher_Raw() {
   Sl(4);
-  HasherType arg1 = (HasherType) S0;
-  Hpc(S1);
-  uint8_t *arg2 = (uint8_t *) S1;
-  size_t arg3 = (size_t) S2;
-  uint8_t *arg4 = (uint8_t *) (uint8_t *)S3;
+  HasherType arg1 = (HasherType) stk[-4];
+  Hpc(stk[-3]);
+  uint8_t *arg2 = (uint8_t *) stk[-3];
+  size_t arg3 = (size_t) stk[-2];
+  uint8_t *arg4 = (uint8_t *) (uint8_t *)stk[-1];
   hasher_Raw(arg1,(uint8_t const *)arg2,arg3,arg4);
   Npop(4);
 }
 
 
 struct primfcn hasher_fcns[] = {
-	{"0hasher_InitParam", _wrap_hasher_InitParam},
-	{"0hasher_Init", _wrap_hasher_Init},
-	{"0hasher_Reset", _wrap_hasher_Reset},
-	{"0hasher_Update", _wrap_hasher_Update},
-	{"0hasher_Final", _wrap_hasher_Final},
-	{"0hasher_Raw", _wrap_hasher_Raw},
+	{"0HASHER_INITPARAM", _wrap_hasher_InitParam},
+	{"0HASHER_INIT", _wrap_hasher_Init},
+	{"0HASHER_RESET", _wrap_hasher_Reset},
+	{"0HASHER_UPDATE", _wrap_hasher_Update},
+	{"0HASHER_FINAL", _wrap_hasher_Final},
+	{"0HASHER_RAW", _wrap_hasher_Raw},
 {NULL, (codeptr)0}};
 

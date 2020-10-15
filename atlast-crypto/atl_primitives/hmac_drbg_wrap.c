@@ -138,14 +138,14 @@
  
 void _wrap_hmac_drbg_init() {
   Sl(5);
-  Hpc(S0);
-  HMAC_DRBG_CTX *arg1 = (HMAC_DRBG_CTX *) S0;
-  Hpc(S1);
-  uint8_t *arg2 = (uint8_t *) S1;
-  size_t arg3 = (size_t) S2;
-  Hpc(S3);
-  uint8_t *arg4 = (uint8_t *) S3;
-  size_t arg5 = (size_t) S4;
+  Hpc(stk[-5]);
+  HMAC_DRBG_CTX *arg1 = (HMAC_DRBG_CTX *) stk[-5];
+  Hpc(stk[-4]);
+  uint8_t *arg2 = (uint8_t *) stk[-4];
+  size_t arg3 = (size_t) stk[-3];
+  Hpc(stk[-2]);
+  uint8_t *arg4 = (uint8_t *) stk[-2];
+  size_t arg5 = (size_t) stk[-1];
   hmac_drbg_init(arg1,(uint8_t const *)arg2,arg3,(uint8_t const *)arg4,arg5);
   Npop(5);
 }
@@ -153,14 +153,14 @@ void _wrap_hmac_drbg_init() {
 
 void _wrap_hmac_drbg_reseed() {
   Sl(5);
-  Hpc(S0);
-  HMAC_DRBG_CTX *arg1 = (HMAC_DRBG_CTX *) S0;
-  Hpc(S1);
-  uint8_t *arg2 = (uint8_t *) S1;
-  size_t arg3 = (size_t) S2;
-  Hpc(S3);
-  uint8_t *arg4 = (uint8_t *) S3;
-  size_t arg5 = (size_t) S4;
+  Hpc(stk[-5]);
+  HMAC_DRBG_CTX *arg1 = (HMAC_DRBG_CTX *) stk[-5];
+  Hpc(stk[-4]);
+  uint8_t *arg2 = (uint8_t *) stk[-4];
+  size_t arg3 = (size_t) stk[-3];
+  Hpc(stk[-2]);
+  uint8_t *arg4 = (uint8_t *) stk[-2];
+  size_t arg5 = (size_t) stk[-1];
   hmac_drbg_reseed(arg1,(uint8_t const *)arg2,arg3,(uint8_t const *)arg4,arg5);
   Npop(5);
 }
@@ -168,19 +168,19 @@ void _wrap_hmac_drbg_reseed() {
 
 void _wrap_hmac_drbg_generate() {
   Sl(3);
-  Hpc(S0);
-  HMAC_DRBG_CTX *arg1 = (HMAC_DRBG_CTX *) S0;
-  Hpc(S1);
-  uint8_t *arg2 = (uint8_t *) S1;
-  size_t arg3 = (size_t) S2;
+  Hpc(stk[-3]);
+  HMAC_DRBG_CTX *arg1 = (HMAC_DRBG_CTX *) stk[-3];
+  Hpc(stk[-2]);
+  uint8_t *arg2 = (uint8_t *) stk[-2];
+  size_t arg3 = (size_t) stk[-1];
   hmac_drbg_generate(arg1,arg2,arg3);
   Npop(3);
 }
 
 
 struct primfcn hmac_drbg_fcns[] = {
-	{"0hmac_drbg_init", _wrap_hmac_drbg_init},
-	{"0hmac_drbg_reseed", _wrap_hmac_drbg_reseed},
-	{"0hmac_drbg_generate", _wrap_hmac_drbg_generate},
+	{"0HMAC_DRBG_INIT", _wrap_hmac_drbg_init},
+	{"0HMAC_DRBG_RESEED", _wrap_hmac_drbg_reseed},
+	{"0HMAC_DRBG_GENERATE", _wrap_hmac_drbg_generate},
 {NULL, (codeptr)0}};
 

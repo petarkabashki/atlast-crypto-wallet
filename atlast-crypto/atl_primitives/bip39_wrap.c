@@ -123,10 +123,6 @@
 #endif
 
 
- /* Put header files here or function declarations like below */
-
-#include "atldef.h"
-
 #include <stddef.h>
 #include <string.h>
 #include <stdio.h>
@@ -138,7 +134,7 @@
  
 void _wrap_mnemonic_generate() {
   Sl(1);
-  int arg1 = (int) S0;
+  int arg1 = (int) stk[-1];
   char * result = (char *)mnemonic_generate(arg1);
   Npop(1);
   Push = (stackitem)result;
@@ -147,9 +143,9 @@ void _wrap_mnemonic_generate() {
 
 void _wrap_mnemonic_from_data() {
   Sl(2);
-  Hpc(S0);
-  uint8_t *arg1 = (uint8_t *) S0;
-  int arg2 = (int) S1;
+  Hpc(stk[-2]);
+  uint8_t *arg1 = (uint8_t *) stk[-2];
+  int arg2 = (int) stk[-1];
   char * result = (char *)mnemonic_from_data((uint8_t const *)arg1,arg2);
   Npop(2);
   Push = (stackitem)result;
@@ -165,7 +161,7 @@ void _wrap_mnemonic_clear() {
 
 void _wrap_mnemonic_check() {
   Sl(1);
-  char *arg1 = (char *) S0;
+  char *arg1 = (char *) stk[-1];
   int result = (int)mnemonic_check((char const *)arg1);
   Npop(1);
   Push = (stackitem)result;
@@ -174,9 +170,9 @@ void _wrap_mnemonic_check() {
 
 void _wrap_mnemonic_to_entropy() {
   Sl(2);
-  char *arg1 = (char *) S0;
-  Hpc(S1);
-  uint8_t *arg2 = (uint8_t *) S1;
+  char *arg1 = (char *) stk[-2];
+  Hpc(stk[-1]);
+  uint8_t *arg2 = (uint8_t *) stk[-1];
   int result = (int)mnemonic_to_entropy((char const *)arg1,arg2);
   Npop(2);
   Push = (stackitem)result;
@@ -185,11 +181,11 @@ void _wrap_mnemonic_to_entropy() {
 
 void _wrap_mnemonic_to_seed() {
   Sl(4);
-  char *arg1 = (char *) S0;
-  char *arg2 = (char *) S1;
-  uint8_t *arg3 = (uint8_t *) (uint8_t *)S2;
-  Hpc(S3);
-  void (*arg4)(uint32_t,uint32_t) = (void (*)(uint32_t,uint32_t)) S3;
+  char *arg1 = (char *) stk[-4];
+  char *arg2 = (char *) stk[-3];
+  uint8_t *arg3 = (uint8_t *) (uint8_t *)stk[-2];
+  Hpc(stk[-1]);
+  void (*arg4)(uint32_t,uint32_t) = (void (*)(uint32_t,uint32_t)) stk[-1];
   mnemonic_to_seed((char const *)arg1,(char const *)arg2,arg3,arg4);
   Npop(4);
 }
@@ -197,7 +193,7 @@ void _wrap_mnemonic_to_seed() {
 
 void _wrap_mnemonic_find_word() {
   Sl(1);
-  char *arg1 = (char *) S0;
+  char *arg1 = (char *) stk[-1];
   int result = (int)mnemonic_find_word((char const *)arg1);
   Npop(1);
   Push = (stackitem)result;
@@ -206,8 +202,8 @@ void _wrap_mnemonic_find_word() {
 
 void _wrap_mnemonic_complete_word() {
   Sl(2);
-  char *arg1 = (char *) S0;
-  int arg2 = (int) S1;
+  char *arg1 = (char *) stk[-2];
+  int arg2 = (int) stk[-1];
   char * result = (char *)mnemonic_complete_word((char const *)arg1,arg2);
   Npop(2);
   Push = (stackitem)result;
@@ -216,7 +212,7 @@ void _wrap_mnemonic_complete_word() {
 
 void _wrap_mnemonic_get_word() {
   Sl(1);
-  int arg1 = (int) S0;
+  int arg1 = (int) stk[-1];
   char * result = (char *)mnemonic_get_word(arg1);
   Npop(1);
   Push = (stackitem)result;
@@ -225,8 +221,8 @@ void _wrap_mnemonic_get_word() {
 
 void _wrap_mnemonic_word_completion_mask() {
   Sl(2);
-  char *arg1 = (char *) S0;
-  int arg2 = (int) S1;
+  char *arg1 = (char *) stk[-2];
+  int arg2 = (int) stk[-1];
   uint32_t result = mnemonic_word_completion_mask((char const *)arg1,arg2);
   Npop(2);
   Push = (stackitem)result;
@@ -234,15 +230,15 @@ void _wrap_mnemonic_word_completion_mask() {
 
 
 struct primfcn bip39_fcns[] = {
-	{"0mnemonic_generate", _wrap_mnemonic_generate},
-	{"0mnemonic_from_data", _wrap_mnemonic_from_data},
-	{"0mnemonic_clear", _wrap_mnemonic_clear},
-	{"0mnemonic_check", _wrap_mnemonic_check},
-	{"0mnemonic_to_entropy", _wrap_mnemonic_to_entropy},
-	{"0mnemonic_to_seed", _wrap_mnemonic_to_seed},
-	{"0mnemonic_find_word", _wrap_mnemonic_find_word},
-	{"0mnemonic_complete_word", _wrap_mnemonic_complete_word},
-	{"0mnemonic_get_word", _wrap_mnemonic_get_word},
-	{"0mnemonic_word_completion_mask", _wrap_mnemonic_word_completion_mask},
+	{"0MNEMONIC_GENERATE", _wrap_mnemonic_generate},
+	{"0MNEMONIC_FROM_DATA", _wrap_mnemonic_from_data},
+	{"0MNEMONIC_CLEAR", _wrap_mnemonic_clear},
+	{"0MNEMONIC_CHECK", _wrap_mnemonic_check},
+	{"0MNEMONIC_TO_ENTROPY", _wrap_mnemonic_to_entropy},
+	{"0MNEMONIC_TO_SEED", _wrap_mnemonic_to_seed},
+	{"0MNEMONIC_FIND_WORD", _wrap_mnemonic_find_word},
+	{"0MNEMONIC_COMPLETE_WORD", _wrap_mnemonic_complete_word},
+	{"0MNEMONIC_GET_WORD", _wrap_mnemonic_get_word},
+	{"0MNEMONIC_WORD_COMPLETION_MASK", _wrap_mnemonic_word_completion_mask},
 {NULL, (codeptr)0}};
 

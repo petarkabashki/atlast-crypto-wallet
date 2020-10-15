@@ -1,9 +1,5 @@
 %module bip39
  %{
- /* Put header files here or function declarations like below */
-
-#include "atldef.h"
-
 #include <stddef.h>
 #include <string.h>
 #include <stdio.h>

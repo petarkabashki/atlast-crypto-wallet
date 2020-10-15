@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/atlast-crypto.dir/atl_primitives/bignum_wrap.c.o"
   "CMakeFiles/atlast-crypto.dir/atl_primitives/bip32_wrap.c.o"
   "CMakeFiles/atlast-crypto.dir/atl_primitives/bip39_wrap.c.o"
+  "CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o"
   "CMakeFiles/atlast-crypto.dir/atl_primitives/ecdsa_wrap.c.o"
   "CMakeFiles/atlast-crypto.dir/atl_primitives/hasher_wrap.c.o"
   "CMakeFiles/atlast-crypto.dir/atl_primitives/hmac_drbg_wrap.c.o"

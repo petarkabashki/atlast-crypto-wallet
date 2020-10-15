@@ -1,5 +1,3 @@
-#ifndef atldef_h
-#define atldef_h
 /*
 
 			      A T L A S T
@@ -19,6 +17,8 @@
 		This program is in the public domain.
 
 */
+#ifndef atldef_h
+#define atldef_h
 
 #include "atlast.h"                   /* Define user linkage structures */
 
@@ -214,8 +214,6 @@ pragma On(PCC_msgs);		      /* High C compiler is brain-dead */
 #define S3  stk[-4]		      /* Fourth on stack */
 #define S4  stk[-5]		      /* Fifth on stack */
 #define S5  stk[-6]		      /* Sixth on stack */
-#define S6  stk[-7]		      /* Sixth on stack */
-#define S7  stk[-8]		      /* Sixth on stack */
 #define Pop stk--		      /* Pop the top item off the stack */
 #define Pop2 stk -= 2		      /* Pop two items off the stack */
 #define Npop(n) stk -= (n)	      /* Pop N items off the stack */

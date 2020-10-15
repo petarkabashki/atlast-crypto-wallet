@@ -146,11 +146,11 @@ void _wrap_aes_init() {
 
 void _wrap_aes_encrypt() {
   Sl(3);
-  Hpc(S0);
-  unsigned char *arg1 = (unsigned char *) S0;
-  Hpc(S1);
-  unsigned char *arg2 = (unsigned char *) S1;
-  aes_encrypt_ctx *arg3 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)S2;
+  Hpc(stk[-3]);
+  unsigned char *arg1 = (unsigned char *) stk[-3];
+  Hpc(stk[-2]);
+  unsigned char *arg2 = (unsigned char *) stk[-2];
+  aes_encrypt_ctx *arg3 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)stk[-1];
   AES_RETURN result = aes_encrypt((unsigned char const *)arg1,arg2,(aes_encrypt_ctx const (*))arg3);
   Npop(3);
   Push = (stackitem)result;
@@ -159,11 +159,11 @@ void _wrap_aes_encrypt() {
 
 void _wrap_aes_decrypt() {
   Sl(3);
-  Hpc(S0);
-  unsigned char *arg1 = (unsigned char *) S0;
-  Hpc(S1);
-  unsigned char *arg2 = (unsigned char *) S1;
-  aes_decrypt_ctx *arg3 = (aes_decrypt_ctx *) (aes_decrypt_ctx *)S2;
+  Hpc(stk[-3]);
+  unsigned char *arg1 = (unsigned char *) stk[-3];
+  Hpc(stk[-2]);
+  unsigned char *arg2 = (unsigned char *) stk[-2];
+  aes_decrypt_ctx *arg3 = (aes_decrypt_ctx *) (aes_decrypt_ctx *)stk[-1];
   AES_RETURN result = aes_decrypt((unsigned char const *)arg1,arg2,(aes_decrypt_ctx const (*))arg3);
   Npop(3);
   Push = (stackitem)result;
@@ -172,7 +172,7 @@ void _wrap_aes_decrypt() {
 
 void _wrap_aes_test_alignment_detection() {
   Sl(1);
-  unsigned int arg1 = (unsigned int) S0;
+  unsigned int arg1 = (unsigned int) stk[-1];
   AES_RETURN result = aes_test_alignment_detection(arg1);
   Npop(1);
   Push = (stackitem)result;
@@ -181,12 +181,12 @@ void _wrap_aes_test_alignment_detection() {
 
 void _wrap_aes_ecb_encrypt() {
   Sl(4);
-  Hpc(S0);
-  unsigned char *arg1 = (unsigned char *) S0;
-  Hpc(S1);
-  unsigned char *arg2 = (unsigned char *) S1;
-  int arg3 = (int) S2;
-  aes_encrypt_ctx *arg4 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)S3;
+  Hpc(stk[-4]);
+  unsigned char *arg1 = (unsigned char *) stk[-4];
+  Hpc(stk[-3]);
+  unsigned char *arg2 = (unsigned char *) stk[-3];
+  int arg3 = (int) stk[-2];
+  aes_encrypt_ctx *arg4 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)stk[-1];
   AES_RETURN result = aes_ecb_encrypt((unsigned char const *)arg1,arg2,arg3,(aes_encrypt_ctx const (*))arg4);
   Npop(4);
   Push = (stackitem)result;
@@ -195,12 +195,12 @@ void _wrap_aes_ecb_encrypt() {
 
 void _wrap_aes_ecb_decrypt() {
   Sl(4);
-  Hpc(S0);
-  unsigned char *arg1 = (unsigned char *) S0;
-  Hpc(S1);
-  unsigned char *arg2 = (unsigned char *) S1;
-  int arg3 = (int) S2;
-  aes_decrypt_ctx *arg4 = (aes_decrypt_ctx *) (aes_decrypt_ctx *)S3;
+  Hpc(stk[-4]);
+  unsigned char *arg1 = (unsigned char *) stk[-4];
+  Hpc(stk[-3]);
+  unsigned char *arg2 = (unsigned char *) stk[-3];
+  int arg3 = (int) stk[-2];
+  aes_decrypt_ctx *arg4 = (aes_decrypt_ctx *) (aes_decrypt_ctx *)stk[-1];
   AES_RETURN result = aes_ecb_decrypt((unsigned char const *)arg1,arg2,arg3,(aes_decrypt_ctx const (*))arg4);
   Npop(4);
   Push = (stackitem)result;
@@ -209,14 +209,14 @@ void _wrap_aes_ecb_decrypt() {
 
 void _wrap_aes_cbc_encrypt() {
   Sl(5);
-  Hpc(S0);
-  unsigned char *arg1 = (unsigned char *) S0;
-  Hpc(S1);
-  unsigned char *arg2 = (unsigned char *) S1;
-  int arg3 = (int) S2;
-  Hpc(S3);
-  unsigned char *arg4 = (unsigned char *) S3;
-  aes_encrypt_ctx *arg5 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)S4;
+  Hpc(stk[-5]);
+  unsigned char *arg1 = (unsigned char *) stk[-5];
+  Hpc(stk[-4]);
+  unsigned char *arg2 = (unsigned char *) stk[-4];
+  int arg3 = (int) stk[-3];
+  Hpc(stk[-2]);
+  unsigned char *arg4 = (unsigned char *) stk[-2];
+  aes_encrypt_ctx *arg5 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)stk[-1];
   AES_RETURN result = aes_cbc_encrypt((unsigned char const *)arg1,arg2,arg3,arg4,(aes_encrypt_ctx const (*))arg5);
   Npop(5);
   Push = (stackitem)result;
@@ -225,14 +225,14 @@ void _wrap_aes_cbc_encrypt() {
 
 void _wrap_aes_cbc_decrypt() {
   Sl(5);
-  Hpc(S0);
-  unsigned char *arg1 = (unsigned char *) S0;
-  Hpc(S1);
-  unsigned char *arg2 = (unsigned char *) S1;
-  int arg3 = (int) S2;
-  Hpc(S3);
-  unsigned char *arg4 = (unsigned char *) S3;
-  aes_decrypt_ctx *arg5 = (aes_decrypt_ctx *) (aes_decrypt_ctx *)S4;
+  Hpc(stk[-5]);
+  unsigned char *arg1 = (unsigned char *) stk[-5];
+  Hpc(stk[-4]);
+  unsigned char *arg2 = (unsigned char *) stk[-4];
+  int arg3 = (int) stk[-3];
+  Hpc(stk[-2]);
+  unsigned char *arg4 = (unsigned char *) stk[-2];
+  aes_decrypt_ctx *arg5 = (aes_decrypt_ctx *) (aes_decrypt_ctx *)stk[-1];
   AES_RETURN result = aes_cbc_decrypt((unsigned char const *)arg1,arg2,arg3,arg4,(aes_decrypt_ctx const (*))arg5);
   Npop(5);
   Push = (stackitem)result;
@@ -241,7 +241,7 @@ void _wrap_aes_cbc_decrypt() {
 
 void _wrap_aes_mode_reset() {
   Sl(1);
-  aes_encrypt_ctx *arg1 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)S0;
+  aes_encrypt_ctx *arg1 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)stk[-1];
   AES_RETURN result = aes_mode_reset(arg1);
   Npop(1);
   Push = (stackitem)result;
@@ -250,14 +250,14 @@ void _wrap_aes_mode_reset() {
 
 void _wrap_aes_cfb_encrypt() {
   Sl(5);
-  Hpc(S0);
-  unsigned char *arg1 = (unsigned char *) S0;
-  Hpc(S1);
-  unsigned char *arg2 = (unsigned char *) S1;
-  int arg3 = (int) S2;
-  Hpc(S3);
-  unsigned char *arg4 = (unsigned char *) S3;
-  aes_encrypt_ctx *arg5 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)S4;
+  Hpc(stk[-5]);
+  unsigned char *arg1 = (unsigned char *) stk[-5];
+  Hpc(stk[-4]);
+  unsigned char *arg2 = (unsigned char *) stk[-4];
+  int arg3 = (int) stk[-3];
+  Hpc(stk[-2]);
+  unsigned char *arg4 = (unsigned char *) stk[-2];
+  aes_encrypt_ctx *arg5 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)stk[-1];
   AES_RETURN result = aes_cfb_encrypt((unsigned char const *)arg1,arg2,arg3,arg4,arg5);
   Npop(5);
   Push = (stackitem)result;
@@ -266,14 +266,14 @@ void _wrap_aes_cfb_encrypt() {
 
 void _wrap_aes_cfb_decrypt() {
   Sl(5);
-  Hpc(S0);
-  unsigned char *arg1 = (unsigned char *) S0;
-  Hpc(S1);
-  unsigned char *arg2 = (unsigned char *) S1;
-  int arg3 = (int) S2;
-  Hpc(S3);
-  unsigned char *arg4 = (unsigned char *) S3;
-  aes_encrypt_ctx *arg5 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)S4;
+  Hpc(stk[-5]);
+  unsigned char *arg1 = (unsigned char *) stk[-5];
+  Hpc(stk[-4]);
+  unsigned char *arg2 = (unsigned char *) stk[-4];
+  int arg3 = (int) stk[-3];
+  Hpc(stk[-2]);
+  unsigned char *arg4 = (unsigned char *) stk[-2];
+  aes_encrypt_ctx *arg5 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)stk[-1];
   AES_RETURN result = aes_cfb_decrypt((unsigned char const *)arg1,arg2,arg3,arg4,arg5);
   Npop(5);
   Push = (stackitem)result;
@@ -282,14 +282,14 @@ void _wrap_aes_cfb_decrypt() {
 
 void _wrap_aes_ofb_crypt() {
   Sl(5);
-  Hpc(S0);
-  unsigned char *arg1 = (unsigned char *) S0;
-  Hpc(S1);
-  unsigned char *arg2 = (unsigned char *) S1;
-  int arg3 = (int) S2;
-  Hpc(S3);
-  unsigned char *arg4 = (unsigned char *) S3;
-  aes_encrypt_ctx *arg5 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)S4;
+  Hpc(stk[-5]);
+  unsigned char *arg1 = (unsigned char *) stk[-5];
+  Hpc(stk[-4]);
+  unsigned char *arg2 = (unsigned char *) stk[-4];
+  int arg3 = (int) stk[-3];
+  Hpc(stk[-2]);
+  unsigned char *arg4 = (unsigned char *) stk[-2];
+  aes_encrypt_ctx *arg5 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)stk[-1];
   AES_RETURN result = aes_ofb_crypt((unsigned char const *)arg1,arg2,arg3,arg4,arg5);
   Npop(5);
   Push = (stackitem)result;
@@ -298,16 +298,16 @@ void _wrap_aes_ofb_crypt() {
 
 void _wrap_aes_ctr_crypt() {
   Sl(6);
-  Hpc(S0);
-  unsigned char *arg1 = (unsigned char *) S0;
-  Hpc(S1);
-  unsigned char *arg2 = (unsigned char *) S1;
-  int arg3 = (int) S2;
-  Hpc(S3);
-  unsigned char *arg4 = (unsigned char *) S3;
-  Hpc(S4);
-  cbuf_inc *arg5 = (cbuf_inc *) S4;
-  aes_encrypt_ctx *arg6 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)S5;
+  Hpc(stk[-6]);
+  unsigned char *arg1 = (unsigned char *) stk[-6];
+  Hpc(stk[-5]);
+  unsigned char *arg2 = (unsigned char *) stk[-5];
+  int arg3 = (int) stk[-4];
+  Hpc(stk[-3]);
+  unsigned char *arg4 = (unsigned char *) stk[-3];
+  Hpc(stk[-2]);
+  cbuf_inc *arg5 = (cbuf_inc *) stk[-2];
+  aes_encrypt_ctx *arg6 = (aes_encrypt_ctx *) (aes_encrypt_ctx *)stk[-1];
   AES_RETURN result = aes_ctr_crypt((unsigned char const *)arg1,arg2,arg3,arg4,arg5,arg6);
   Npop(6);
   Push = (stackitem)result;
@@ -316,27 +316,27 @@ void _wrap_aes_ctr_crypt() {
 
 void _wrap_aes_ctr_cbuf_inc() {
   Sl(1);
-  Hpc(S0);
-  unsigned char *arg1 = (unsigned char *) S0;
+  Hpc(stk[-1]);
+  unsigned char *arg1 = (unsigned char *) stk[-1];
   aes_ctr_cbuf_inc(arg1);
   Npop(1);
 }
 
 
 struct primfcn aes_fcns[] = {
-	{"0aes_init", _wrap_aes_init},
-	{"0aes_encrypt", _wrap_aes_encrypt},
-	{"0aes_decrypt", _wrap_aes_decrypt},
-	{"0aes_test_alignment_detection", _wrap_aes_test_alignment_detection},
-	{"0aes_ecb_encrypt", _wrap_aes_ecb_encrypt},
-	{"0aes_ecb_decrypt", _wrap_aes_ecb_decrypt},
-	{"0aes_cbc_encrypt", _wrap_aes_cbc_encrypt},
-	{"0aes_cbc_decrypt", _wrap_aes_cbc_decrypt},
-	{"0aes_mode_reset", _wrap_aes_mode_reset},
-	{"0aes_cfb_encrypt", _wrap_aes_cfb_encrypt},
-	{"0aes_cfb_decrypt", _wrap_aes_cfb_decrypt},
-	{"0aes_ofb_crypt", _wrap_aes_ofb_crypt},
-	{"0aes_ctr_crypt", _wrap_aes_ctr_crypt},
-	{"0aes_ctr_cbuf_inc", _wrap_aes_ctr_cbuf_inc},
+	{"0AES_INIT", _wrap_aes_init},
+	{"0AES_ENCRYPT", _wrap_aes_encrypt},
+	{"0AES_DECRYPT", _wrap_aes_decrypt},
+	{"0AES_TEST_ALIGNMENT_DETECTION", _wrap_aes_test_alignment_detection},
+	{"0AES_ECB_ENCRYPT", _wrap_aes_ecb_encrypt},
+	{"0AES_ECB_DECRYPT", _wrap_aes_ecb_decrypt},
+	{"0AES_CBC_ENCRYPT", _wrap_aes_cbc_encrypt},
+	{"0AES_CBC_DECRYPT", _wrap_aes_cbc_decrypt},
+	{"0AES_MODE_RESET", _wrap_aes_mode_reset},
+	{"0AES_CFB_ENCRYPT", _wrap_aes_cfb_encrypt},
+	{"0AES_CFB_DECRYPT", _wrap_aes_cfb_decrypt},
+	{"0AES_OFB_CRYPT", _wrap_aes_ofb_crypt},
+	{"0AES_CTR_CRYPT", _wrap_aes_ctr_crypt},
+	{"0AES_CTR_CBUF_INC", _wrap_aes_ctr_cbuf_inc},
 {NULL, (codeptr)0}};
 

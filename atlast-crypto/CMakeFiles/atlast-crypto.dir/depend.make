@@ -55,6 +55,10 @@ atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/bip39_wrap.c.o: crypto
 atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/bip39_wrap.c.o: atlast-forth/atlast-1.2/atlast.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/bip39_wrap.c.o: atlast-forth/atlast-1.2/atldef.h
 
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: atlast-crypto/atl_primitives/common_atl.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: atlast-forth/atlast-1.2/atldef.h
+
 atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/ecdsa_wrap.c.o: atlast-crypto/atl_primitives/ecdsa_wrap.c
 atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/ecdsa_wrap.c.o: atlast-crypto/atl_primitives/ecdsa_wrap.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/ecdsa_wrap.c.o: crypto/bignum.h
@@ -120,6 +124,7 @@ atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/atl_primitive
 atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/atl_primitives/bignum_wrap.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/atl_primitives/bip32_wrap.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/atl_primitives/bip39_wrap.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/atl_primitives/common_atl.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/atl_primitives/ecdsa_wrap.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/atl_primitives/hasher_wrap.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/atl_primitives/hmac_drbg_wrap.h

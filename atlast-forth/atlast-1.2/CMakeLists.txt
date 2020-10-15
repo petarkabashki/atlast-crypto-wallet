@@ -3,7 +3,9 @@ cmake_minimum_required(VERSION 3.18)
 
 project(atlast VERSION 1.2.0)
 
-add_definitions(-g -Wall -DMEMSTAT -DALIGNMENT -DEXPORT -DREADONLYSTRINGS -DNOMEMCHECK)
+add_definitions(-g -Wall -DMEMSTAT -DALIGNMENT -DEXPORT -DREADONLYSTRINGS  -DNOMEMCHECK)
+
+# -DNOMEMCHECK
 
 add_library("${PROJECT_NAME}"
     atlast.c

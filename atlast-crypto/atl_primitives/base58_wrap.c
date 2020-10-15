@@ -138,12 +138,12 @@
  
 void _wrap_base58_encode_check() {
   Sl(5);
-  Hpc(S0);
-  uint8_t *arg1 = (uint8_t *) S0;
-  int arg2 = (int) S1;
-  HasherType arg3 = (HasherType) S2;
-  char *arg4 = (char *) S3;
-  int arg5 = (int) S4;
+  Hpc(stk[-5]);
+  uint8_t *arg1 = (uint8_t *) stk[-5];
+  int arg2 = (int) stk[-4];
+  HasherType arg3 = (HasherType) stk[-3];
+  char *arg4 = (char *) stk[-2];
+  int arg5 = (int) stk[-1];
   int result = (int)base58_encode_check((uint8_t const *)arg1,arg2,arg3,arg4,arg5);
   Npop(5);
   Push = (stackitem)result;
@@ -152,11 +152,11 @@ void _wrap_base58_encode_check() {
 
 void _wrap_base58_decode_check() {
   Sl(4);
-  char *arg1 = (char *) S0;
-  HasherType arg2 = (HasherType) S1;
-  Hpc(S2);
-  uint8_t *arg3 = (uint8_t *) S2;
-  int arg4 = (int) S3;
+  char *arg1 = (char *) stk[-4];
+  HasherType arg2 = (HasherType) stk[-3];
+  Hpc(stk[-2]);
+  uint8_t *arg3 = (uint8_t *) stk[-2];
+  int arg4 = (int) stk[-1];
   int result = (int)base58_decode_check((char const *)arg1,arg2,arg3,arg4);
   Npop(4);
   Push = (stackitem)result;
@@ -165,11 +165,11 @@ void _wrap_base58_decode_check() {
 
 void _wrap_b58tobin() {
   Sl(3);
-  Hpc(S0);
-  void *arg1 = (void *) S0;
-  Hpc(S1);
-  size_t *arg2 = (size_t *) S1;
-  char *arg3 = (char *) S2;
+  Hpc(stk[-3]);
+  void *arg1 = (void *) stk[-3];
+  Hpc(stk[-2]);
+  size_t *arg2 = (size_t *) stk[-2];
+  char *arg3 = (char *) stk[-1];
   bool result = (bool)b58tobin(arg1,arg2,(char const *)arg3);
   Npop(3);
   Push = (stackitem)result;
@@ -178,11 +178,11 @@ void _wrap_b58tobin() {
 
 void _wrap_b58check() {
   Sl(4);
-  Hpc(S0);
-  void *arg1 = (void *) S0;
-  size_t arg2 = (size_t) S1;
-  HasherType arg3 = (HasherType) S2;
-  char *arg4 = (char *) S3;
+  Hpc(stk[-4]);
+  void *arg1 = (void *) stk[-4];
+  size_t arg2 = (size_t) stk[-3];
+  HasherType arg3 = (HasherType) stk[-2];
+  char *arg4 = (char *) stk[-1];
   int result = (int)b58check((void const *)arg1,arg2,arg3,(char const *)arg4);
   Npop(4);
   Push = (stackitem)result;
@@ -191,12 +191,12 @@ void _wrap_b58check() {
 
 void _wrap_b58enc() {
   Sl(4);
-  char *arg1 = (char *) S0;
-  Hpc(S1);
-  size_t *arg2 = (size_t *) S1;
-  Hpc(S2);
-  void *arg3 = (void *) S2;
-  size_t arg4 = (size_t) S3;
+  char *arg1 = (char *) stk[-4];
+  Hpc(stk[-3]);
+  size_t *arg2 = (size_t *) stk[-3];
+  Hpc(stk[-2]);
+  void *arg3 = (void *) stk[-2];
+  size_t arg4 = (size_t) stk[-1];
   bool result = (bool)b58enc(arg1,arg2,(void const *)arg3,arg4);
   Npop(4);
   Push = (stackitem)result;
@@ -204,10 +204,10 @@ void _wrap_b58enc() {
 
 
 struct primfcn base58_fcns[] = {
-	{"0base58_encode_check", _wrap_base58_encode_check},
-	{"0base58_decode_check", _wrap_base58_decode_check},
-	{"0b58tobin", _wrap_b58tobin},
-	{"0b58check", _wrap_b58check},
-	{"0b58enc", _wrap_b58enc},
+	{"0BASE58_ENCODE_CHECK", _wrap_base58_encode_check},
+	{"0BASE58_DECODE_CHECK", _wrap_base58_decode_check},
+	{"0B58TOBIN", _wrap_b58tobin},
+	{"0B58CHECK", _wrap_b58check},
+	{"0B58ENC", _wrap_b58enc},
 {NULL, (codeptr)0}};
 

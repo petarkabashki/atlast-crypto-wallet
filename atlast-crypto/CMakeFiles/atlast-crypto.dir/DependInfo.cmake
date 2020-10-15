@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/bignum_wrap.c" "/home/grenada/proj/atlast-crypto/atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/bignum_wrap.c.o"
   "/home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/bip32_wrap.c" "/home/grenada/proj/atlast-crypto/atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/bip32_wrap.c.o"
   "/home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/bip39_wrap.c" "/home/grenada/proj/atlast-crypto/atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/bip39_wrap.c.o"
+  "/home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/common_atl.c" "/home/grenada/proj/atlast-crypto/atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o"
   "/home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/ecdsa_wrap.c" "/home/grenada/proj/atlast-crypto/atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/ecdsa_wrap.c.o"
   "/home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/hasher_wrap.c" "/home/grenada/proj/atlast-crypto/atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/hasher_wrap.c.o"
   "/home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/hmac_drbg_wrap.c" "/home/grenada/proj/atlast-crypto/atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/hmac_drbg_wrap.c.o"

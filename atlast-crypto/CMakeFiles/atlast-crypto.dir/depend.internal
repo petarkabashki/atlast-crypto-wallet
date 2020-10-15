@@ -55,6 +55,10 @@ atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/bip39_wrap.c.o
  /home/grenada/proj/atlast-crypto/crypto/bip39.h
  atlast-forth/atlast-1.2/atlast.h
  atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/common_atl.c
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/ecdsa_wrap.c.o
  /home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/ecdsa_wrap.c
  /home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/ecdsa_wrap.h
@@ -121,6 +125,7 @@ atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o
  /home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/bignum_wrap.h
  /home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/bip32_wrap.h
  /home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/bip39_wrap.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/common_atl.h
  /home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/ecdsa_wrap.h
  /home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/hasher_wrap.h
  /home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/hmac_drbg_wrap.h
