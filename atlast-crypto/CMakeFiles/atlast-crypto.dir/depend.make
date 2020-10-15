@@ -56,6 +56,17 @@ atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/bip39_wrap.c.o: atlast
 atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/bip39_wrap.c.o: atlast-forth/atlast-1.2/atldef.h
 
 atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: atlast-crypto/atl_primitives/common_atl.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: crypto/bignum.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: crypto/bip32.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: crypto/blake256.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: crypto/blake2b.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: crypto/ecdsa.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: crypto/ed25519-donna/ed25519.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: crypto/groestl.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: crypto/hasher.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: crypto/options.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: crypto/sha2.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: crypto/sha3.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: atlast-forth/atlast-1.2/atlast.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o: atlast-forth/atlast-1.2/atldef.h
 

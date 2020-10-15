@@ -57,6 +57,17 @@ atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/bip39_wrap.c.o
  atlast-forth/atlast-1.2/atldef.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/common_atl.c.o
  /home/grenada/proj/atlast-crypto/atlast-crypto/atl_primitives/common_atl.c
+ /home/grenada/proj/atlast-crypto/crypto/bignum.h
+ /home/grenada/proj/atlast-crypto/crypto/bip32.h
+ /home/grenada/proj/atlast-crypto/crypto/blake256.h
+ /home/grenada/proj/atlast-crypto/crypto/blake2b.h
+ /home/grenada/proj/atlast-crypto/crypto/ecdsa.h
+ /home/grenada/proj/atlast-crypto/crypto/ed25519-donna/ed25519.h
+ /home/grenada/proj/atlast-crypto/crypto/groestl.h
+ /home/grenada/proj/atlast-crypto/crypto/hasher.h
+ /home/grenada/proj/atlast-crypto/crypto/options.h
+ /home/grenada/proj/atlast-crypto/crypto/sha2.h
+ /home/grenada/proj/atlast-crypto/crypto/sha3.h
  atlast-forth/atlast-1.2/atlast.h
  atlast-forth/atlast-1.2/atldef.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_primitives/ecdsa_wrap.c.o
