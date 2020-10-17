@@ -207,7 +207,7 @@ AES_RETURN aes_cfb_decrypt(const unsigned char *ibuf, unsigned char *obuf,
 AES_RETURN aes_ofb_crypt(const unsigned char *ibuf, unsigned char *obuf,
                     int len, unsigned char *iv, aes_encrypt_ctx cx[1]);
 
-typedef void cbuf_inc(unsigned char *cbuf);
+typedef void (cbuf_inc)(unsigned char *cbuf);
 
 #define aes_ctr_encrypt aes_ctr_crypt
 #define aes_ctr_decrypt aes_ctr_crypt

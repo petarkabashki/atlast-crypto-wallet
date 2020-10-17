@@ -155,7 +155,7 @@ crypto/clean: crypto/CMakeFiles/crypto.dir/clean
 crypto/CMakeFiles/crypto.dir/all:
 	$(MAKE) $(MAKESILENT) -f crypto/CMakeFiles/crypto.dir/build.make crypto/CMakeFiles/crypto.dir/depend
 	$(MAKE) $(MAKESILENT) -f crypto/CMakeFiles/crypto.dir/build.make crypto/CMakeFiles/crypto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77 "Built target crypto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94 "Built target crypto"
 .PHONY : crypto/CMakeFiles/crypto.dir/all
 
 # Build rule for subdir invocation for target.
@@ -237,12 +237,12 @@ atlast-crypto/CMakeFiles/atlast-crypto.dir/all: crypto/CMakeFiles/crypto.dir/all
 atlast-crypto/CMakeFiles/atlast-crypto.dir/all: atlast-forth/atlast-1.2/CMakeFiles/atlast.dir/all
 	$(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/depend
 	$(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target atlast-crypto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37 "Built target atlast-crypto"
 .PHONY : atlast-crypto/CMakeFiles/atlast-crypto.dir/all
 
 # Build rule for subdir invocation for target.
 atlast-crypto/CMakeFiles/atlast-crypto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/grenada/proj/atlast-crypto/CMakeFiles 75
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/grenada/proj/atlast-crypto/CMakeFiles 92
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 atlast-crypto/CMakeFiles/atlast-crypto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/grenada/proj/atlast-crypto/CMakeFiles 0
 .PHONY : atlast-crypto/CMakeFiles/atlast-crypto.dir/rule

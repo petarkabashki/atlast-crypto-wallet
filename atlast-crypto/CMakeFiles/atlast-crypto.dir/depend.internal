@@ -147,3 +147,158 @@ atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o
  /home/grenada/proj/atlast-crypto/atlast-crypto/main.c
  atlast-forth/atlast-1.2/atlast.h
  atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_address.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_address.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_address.h
+ /home/grenada/proj/atlast-crypto/crypto/address.h
+ /home/grenada/proj/atlast-crypto/crypto/options.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_aes.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_aes.h
+ /home/grenada/proj/atlast-crypto/crypto/aes/aes.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_base32.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_base32.h
+ /home/grenada/proj/atlast-crypto/crypto/base32.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base58.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_base58.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_base58.h
+ /home/grenada/proj/atlast-crypto/crypto/base58.h
+ /home/grenada/proj/atlast-crypto/crypto/blake256.h
+ /home/grenada/proj/atlast-crypto/crypto/blake2b.h
+ /home/grenada/proj/atlast-crypto/crypto/groestl.h
+ /home/grenada/proj/atlast-crypto/crypto/hasher.h
+ /home/grenada/proj/atlast-crypto/crypto/options.h
+ /home/grenada/proj/atlast-crypto/crypto/sha2.h
+ /home/grenada/proj/atlast-crypto/crypto/sha3.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bignum.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_bignum.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_bignum.h
+ /home/grenada/proj/atlast-crypto/crypto/bignum.h
+ /home/grenada/proj/atlast-crypto/crypto/options.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_bip32.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_bip32.h
+ /home/grenada/proj/atlast-crypto/crypto/bignum.h
+ /home/grenada/proj/atlast-crypto/crypto/bip32.h
+ /home/grenada/proj/atlast-crypto/crypto/blake256.h
+ /home/grenada/proj/atlast-crypto/crypto/blake2b.h
+ /home/grenada/proj/atlast-crypto/crypto/ecdsa.h
+ /home/grenada/proj/atlast-crypto/crypto/ed25519-donna/ed25519.h
+ /home/grenada/proj/atlast-crypto/crypto/groestl.h
+ /home/grenada/proj/atlast-crypto/crypto/hasher.h
+ /home/grenada/proj/atlast-crypto/crypto/options.h
+ /home/grenada/proj/atlast-crypto/crypto/sha2.h
+ /home/grenada/proj/atlast-crypto/crypto/sha3.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_bip39.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_bip39.h
+ /home/grenada/proj/atlast-crypto/crypto/bip39.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_cash_addr.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_cash_addr.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_cash_addr.h
+ /home/grenada/proj/atlast-crypto/crypto/cash_addr.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_ecdsa.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_ecdsa.h
+ /home/grenada/proj/atlast-crypto/crypto/bignum.h
+ /home/grenada/proj/atlast-crypto/crypto/blake256.h
+ /home/grenada/proj/atlast-crypto/crypto/blake2b.h
+ /home/grenada/proj/atlast-crypto/crypto/ecdsa.h
+ /home/grenada/proj/atlast-crypto/crypto/groestl.h
+ /home/grenada/proj/atlast-crypto/crypto/hasher.h
+ /home/grenada/proj/atlast-crypto/crypto/options.h
+ /home/grenada/proj/atlast-crypto/crypto/sha2.h
+ /home/grenada/proj/atlast-crypto/crypto/sha3.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hasher.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hasher.h
+ /home/grenada/proj/atlast-crypto/crypto/blake256.h
+ /home/grenada/proj/atlast-crypto/crypto/blake2b.h
+ /home/grenada/proj/atlast-crypto/crypto/groestl.h
+ /home/grenada/proj/atlast-crypto/crypto/hasher.h
+ /home/grenada/proj/atlast-crypto/crypto/options.h
+ /home/grenada/proj/atlast-crypto/crypto/sha2.h
+ /home/grenada/proj/atlast-crypto/crypto/sha3.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hmac.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hmac.h
+ /home/grenada/proj/atlast-crypto/crypto/hmac.h
+ /home/grenada/proj/atlast-crypto/crypto/sha2.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hmac_drbg.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hmac_drbg.h
+ /home/grenada/proj/atlast-crypto/crypto/hmac_drbg.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+ crypto/sha2.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_memzero.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_memzero.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_memzero.h
+ /home/grenada/proj/atlast-crypto/crypto/memzero.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_sha2.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_sha2.h
+ /home/grenada/proj/atlast-crypto/crypto/sha2.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_sha3.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_sha3.h
+ /home/grenada/proj/atlast-crypto/crypto/options.h
+ /home/grenada/proj/atlast-crypto/crypto/sha3.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_slip39.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_slip39.h
+ /home/grenada/proj/atlast-crypto/crypto/slip39.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39_wordlist.c.o
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/common_wrapper.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_slip39_wordlist.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_slip39_wordlist.h
+ /home/grenada/proj/atlast-crypto/crypto/slip39_wordlist.h
+ atlast-forth/atlast-1.2/atlast.h
+ atlast-forth/atlast-1.2/atldef.h

@@ -13,19 +13,21 @@
 // generate with
 // ls ./atl_primitives/*wrap.h | sort | uniq | sed -e 's_\./_#include "_' |  sed -e 's_$_"_'
 
-#include "atl_primitives/aes_wrap.h"
-#include "atl_primitives/base32_wrap.h"
-#include "atl_primitives/base58_wrap.h"
-#include "atl_primitives/bignum_wrap.h"
-#include "atl_primitives/bip32_wrap.h"
-#include "atl_primitives/bip39_wrap.h"
-#include "atl_primitives/ecdsa_wrap.h"
-#include "atl_primitives/hasher_wrap.h"
-#include "atl_primitives/hmac_drbg_wrap.h"
-#include "atl_primitives/hmac_wrap.h"
-#include "atl_primitives/sha2_wrap.h"
-#include "atl_primitives/sha3_wrap.h"
-#include "atl_primitives/slip39_wrap.h"
+// #include "atl_primitives/aes_wrap.h"
+// #include "atl_primitives/base32_wrap.h"
+// #include "atl_primitives/base58_wrap.h"
+// #include "atl_primitives/bignum_wrap.h"
+// #include "atl_primitives/bip32_wrap.h"
+// #include "atl_primitives/bip39_wrap.h"
+// #include "atl_primitives/ecdsa_wrap.h"
+// #include "atl_primitives/hasher_wrap.h"
+// #include "atl_primitives/hmac_drbg_wrap.h"
+// #include "atl_primitives/hmac_wrap.h"
+// #include "atl_primitives/sha2_wrap.h"
+// #include "atl_primitives/sha3_wrap.h"
+// #include "atl_primitives/slip39_wrap.h"
+
+#include "wrap_crypto/wrap_bip39.h"
 
 // #include "bip32.h"
 
@@ -62,23 +64,24 @@ char *argv[];
 // generated with
 // rg -INoe '(\w+_fcns)\[' ./atl_primitives/ -r '$1' | sort | uniq | sed -e 's_.*_atl\_primdef(\0);_'
 
-atl_primdef(common_fcns);
+// atl_primdef(common_fcns);
 
-atl_primdef(aes_fcns);
-atl_primdef(base32_fcns);
-atl_primdef(base58_fcns);
-atl_primdef(bignum_fcns);
-atl_primdef(bip32_fcns);
+// atl_primdef(aes_fcns);
+// atl_primdef(base32_fcns);
+// atl_primdef(base58_fcns);
+// atl_primdef(bignum_fcns);
+// atl_primdef(bip32_fcns);
+// atl_primdef(bip39_fcns);
+// atl_primdef(ecdsa_fcns);
+// atl_primdef(hasher_fcns);
+// atl_primdef(hmac_drbg_fcns);
+// atl_primdef(hmac_fcns);
+// atl_primdef(sha2_fcns);
+// atl_primdef(sha3_fcns);
+// atl_primdef(slip39_fcns);
+
+
 atl_primdef(bip39_fcns);
-atl_primdef(ecdsa_fcns);
-atl_primdef(hasher_fcns);
-atl_primdef(hmac_drbg_fcns);
-atl_primdef(hmac_fcns);
-atl_primdef(sha2_fcns);
-atl_primdef(sha3_fcns);
-atl_primdef(slip39_fcns);
-
-
 
 	int i;
 	int fname = FALSE, defmode = FALSE;

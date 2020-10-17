@@ -147,3 +147,158 @@ atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/main.c
 atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-forth/atlast-1.2/atlast.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-forth/atlast-1.2/atldef.h
 
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_address.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_address.c.o: atlast-crypto/wrap_crypto/wrap_address.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_address.c.o: atlast-crypto/wrap_crypto/wrap_address.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_address.c.o: crypto/address.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_address.c.o: crypto/options.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_address.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_address.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.o: atlast-crypto/wrap_crypto/wrap_aes.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.o: atlast-crypto/wrap_crypto/wrap_aes.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.o: crypto/aes/aes.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.o: atlast-crypto/wrap_crypto/wrap_base32.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.o: atlast-crypto/wrap_crypto/wrap_base32.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.o: crypto/base32.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base58.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base58.c.o: atlast-crypto/wrap_crypto/wrap_base58.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base58.c.o: atlast-crypto/wrap_crypto/wrap_base58.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base58.c.o: crypto/base58.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base58.c.o: crypto/blake256.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base58.c.o: crypto/blake2b.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base58.c.o: crypto/groestl.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base58.c.o: crypto/hasher.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base58.c.o: crypto/options.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base58.c.o: crypto/sha2.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base58.c.o: crypto/sha3.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base58.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base58.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bignum.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bignum.c.o: atlast-crypto/wrap_crypto/wrap_bignum.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bignum.c.o: atlast-crypto/wrap_crypto/wrap_bignum.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bignum.c.o: crypto/bignum.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bignum.c.o: crypto/options.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bignum.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bignum.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: atlast-crypto/wrap_crypto/wrap_bip32.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: atlast-crypto/wrap_crypto/wrap_bip32.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: crypto/bignum.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: crypto/bip32.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: crypto/blake256.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: crypto/blake2b.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: crypto/ecdsa.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: crypto/ed25519-donna/ed25519.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: crypto/groestl.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: crypto/hasher.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: crypto/options.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: crypto/sha2.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: crypto/sha3.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.o: atlast-crypto/wrap_crypto/wrap_bip39.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.o: atlast-crypto/wrap_crypto/wrap_bip39.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.o: crypto/bip39.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_cash_addr.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_cash_addr.c.o: atlast-crypto/wrap_crypto/wrap_cash_addr.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_cash_addr.c.o: atlast-crypto/wrap_crypto/wrap_cash_addr.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_cash_addr.c.o: crypto/cash_addr.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_cash_addr.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_cash_addr.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: atlast-crypto/wrap_crypto/wrap_ecdsa.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: atlast-crypto/wrap_crypto/wrap_ecdsa.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: crypto/bignum.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: crypto/blake256.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: crypto/blake2b.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: crypto/ecdsa.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: crypto/groestl.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: crypto/hasher.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: crypto/options.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: crypto/sha2.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: crypto/sha3.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o: atlast-crypto/wrap_crypto/wrap_hasher.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o: atlast-crypto/wrap_crypto/wrap_hasher.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o: crypto/blake256.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o: crypto/blake2b.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o: crypto/groestl.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o: crypto/hasher.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o: crypto/options.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o: crypto/sha2.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o: crypto/sha3.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o: atlast-crypto/wrap_crypto/wrap_hmac.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o: atlast-crypto/wrap_crypto/wrap_hmac.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o: crypto/hmac.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o: crypto/sha2.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o: atlast-crypto/wrap_crypto/wrap_hmac_drbg.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o: atlast-crypto/wrap_crypto/wrap_hmac_drbg.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o: crypto/hmac_drbg.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o: atlast-forth/atlast-1.2/atldef.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o: crypto/sha2.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_memzero.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_memzero.c.o: atlast-crypto/wrap_crypto/wrap_memzero.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_memzero.c.o: atlast-crypto/wrap_crypto/wrap_memzero.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_memzero.c.o: crypto/memzero.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_memzero.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_memzero.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.o: atlast-crypto/wrap_crypto/wrap_sha2.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.o: atlast-crypto/wrap_crypto/wrap_sha2.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.o: crypto/sha2.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o: atlast-crypto/wrap_crypto/wrap_sha3.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o: atlast-crypto/wrap_crypto/wrap_sha3.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o: crypto/options.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o: crypto/sha3.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.o: atlast-crypto/wrap_crypto/wrap_slip39.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.o: atlast-crypto/wrap_crypto/wrap_slip39.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.o: crypto/slip39.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.o: atlast-forth/atlast-1.2/atldef.h
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39_wordlist.c.o: atlast-crypto/wrap_crypto/common_wrapper.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39_wordlist.c.o: atlast-crypto/wrap_crypto/wrap_slip39_wordlist.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39_wordlist.c.o: atlast-crypto/wrap_crypto/wrap_slip39_wordlist.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39_wordlist.c.o: crypto/slip39_wordlist.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39_wordlist.c.o: atlast-forth/atlast-1.2/atlast.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39_wordlist.c.o: atlast-forth/atlast-1.2/atldef.h
+
