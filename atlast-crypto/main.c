@@ -11,7 +11,7 @@
 #include "atl_primitives/common_atl.h"
 
 // generate with
-// ls ./atl_primitives/*wrap.h | sort | uniq | sed -e 's_\./_#include "_' |  sed -e 's_$_"_'
+// ls ./wrap*.h | sort | uniq | sed -e 's_\./_#include "wrap\_crypto/_' |  sed -e 's_$_"_'
 
 // #include "atl_primitives/aes_wrap.h"
 // #include "atl_primitives/base32_wrap.h"
@@ -27,9 +27,18 @@
 // #include "atl_primitives/sha3_wrap.h"
 // #include "atl_primitives/slip39_wrap.h"
 
+#include "wrap_crypto/wrap_aes.h"
+#include "wrap_crypto/wrap_base32.h"
+// #include "wrap_crypto/wrap_bignum.h"
+#include "wrap_crypto/wrap_bip32.h"
 #include "wrap_crypto/wrap_bip39.h"
-
-// #include "bip32.h"
+#include "wrap_crypto/wrap_ecdsa.h"
+#include "wrap_crypto/wrap_hasher.h"
+#include "wrap_crypto/wrap_hmac_drbg.h"
+#include "wrap_crypto/wrap_hmac.h"
+#include "wrap_crypto/wrap_sha2.h"
+#include "wrap_crypto/wrap_sha3.h"
+#include "wrap_crypto/wrap_slip39.h"
 
 #define FALSE 0
 #define TRUE 1
@@ -81,7 +90,19 @@ char *argv[];
 // atl_primdef(slip39_fcns);
 
 
+atl_primdef(aes_fcns);
+atl_primdef(base32_fcns);
+// atl_primdef(bignum_fcns);
+atl_primdef(bip32_fcns);
 atl_primdef(bip39_fcns);
+atl_primdef(ecdsa_fcns);
+atl_primdef(hasher_fcns);
+atl_primdef(hmac_drbg_fcns);
+atl_primdef(hmac_fcns);
+atl_primdef(sha2_fcns);
+atl_primdef(sha3_fcns);
+atl_primdef(slip39_fcns);
+
 
 	int i;
 	int fname = FALSE, defmode = FALSE;
