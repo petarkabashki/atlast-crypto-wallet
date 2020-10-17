@@ -20,7 +20,7 @@ add_executable(${PROJECT_NAME}
     # "atl_primitives/sha3_wrap.c"
     # "atl_primitives/slip39_wrap.c"
     
-    # "atl_primitives/common_atl.c"
+    "atl_common/common_atl.c"
 
     "wrap_crypto/wrap_aes.c"
     "wrap_crypto/wrap_base32.c"

@@ -8,7 +8,7 @@
 #include "atldef.h"
 
 
-#include "atl_primitives/common_atl.h"
+#include "atl_common/common_atl.h"
 
 // generate with
 // ls ./wrap*.h | sort | uniq | sed -e 's_\./_#include "wrap\_crypto/_' |  sed -e 's_$_"_'
@@ -26,6 +26,9 @@
 // #include "atl_primitives/sha2_wrap.h"
 // #include "atl_primitives/sha3_wrap.h"
 // #include "atl_primitives/slip39_wrap.h"
+
+
+#include "atl_common/common_atl.h"
 
 #include "wrap_crypto/wrap_aes.h"
 #include "wrap_crypto/wrap_base32.h"
@@ -73,7 +76,7 @@ char *argv[];
 // generated with
 // rg -INoe '(\w+_fcns)\[' ./atl_primitives/ -r '$1' | sort | uniq | sed -e 's_.*_atl\_primdef(\0);_'
 
-// atl_primdef(common_fcns);
+atl_primdef(common_fcns);
 
 // atl_primdef(aes_fcns);
 // atl_primdef(base32_fcns);

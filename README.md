@@ -61,11 +61,16 @@ node2 ii hdnode_private_ckd
 
 node2 hdnode_fill_public_key
 
+\\\\\\\\\\\\
+
 node2 HDN>PUBKEY addr_version buf buflen ecdsa_get_address
+
+\\\
 
 ecdsa_get_address(node2.public_key, addr_version, buf, buflen); QString address = QString(buf);
 
-
+\\\
+node2 HDN>PUBKEY wif_version buf buflen ecdsa_get_wif 
 ecdsa_get_wif(node2.private_key, wif_version, buf, buflen); QString wif = QString(buf);
 list->setItem(i, 0, new QTableWidgetItem(address));
 list->setItem(i, 1, new QTableWidgetItem(wif));
