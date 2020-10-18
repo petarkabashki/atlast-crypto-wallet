@@ -6,31 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/grenada/proj/atlast-crypto/atlast-forth/atlast-1.2/atlast.c
-stdio.h
--
-ctype.h
--
-stdlib.h
--
-string.h
--
-unistd.h
--
-mem.h
--
-memory.h
--
-atlcfig.h
-/home/grenada/proj/atlast-crypto/atlast-forth/atlast-1.2/atlcfig.h
-atldef.h
-/home/grenada/proj/atlast-crypto/atlast-forth/atlast-1.2/atldef.h
-math.h
--
-
-/home/grenada/proj/atlast-crypto/atlast-forth/atlast-1.2/atlast.h
-
-/home/grenada/proj/atlast-crypto/atlast-forth/atlast-1.2/atldef.h
-atlast.h
-/home/grenada/proj/atlast-crypto/atlast-forth/atlast-1.2/atlast.h
-

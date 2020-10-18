@@ -11,8 +11,10 @@ add_library("${PROJECT_NAME}"
     atlast.c
 )
 
+include_directories(.)
+
 add_executable(${PROJECT_NAME}-console atlmain.c )
 
 target_link_libraries(${PROJECT_NAME}-console PRIVATE ${PROJECT_NAME} m)
 
-target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR})

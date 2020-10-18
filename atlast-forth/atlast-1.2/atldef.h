@@ -213,11 +213,15 @@ pragma On(PCC_msgs);		      /* High C compiler is brain-dead */
 #define S2  stk[-3]		      /* Third on stack */
 #define S3  stk[-4]		      /* Fourth on stack */
 #define S4  stk[-5]		      /* Fifth on stack */
-#define S5  stk[-6]		      /* Sixth on stack */
-#define S6  stk[-7]		      /* Sixth on stack */
-#define S7  stk[-8]		      /* Sixth on stack */
-#define S8  stk[-9]		      /* Sixth on stack */
-#define S9  stk[-10]		      /* Sixth on stack */
+#define S5  stk[-6]		      
+#define S6  stk[-7]		      
+#define S7  stk[-8]		      
+#define S8  stk[-9]		      
+#define S9  stk[-10]		      
+#define S10  stk[-11]		      
+#define S11  stk[-12]		      
+#define S12  stk[-13]		      
+#define S13  stk[-14]		      
 #define Pop stk--		      /* Pop the top item off the stack */
 #define Pop2 stk -= 2		      /* Pop two items off the stack */
 #define Npop(n) stk -= (n)	      /* Pop N items off the stack */

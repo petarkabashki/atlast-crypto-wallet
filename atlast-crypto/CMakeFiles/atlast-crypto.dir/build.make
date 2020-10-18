@@ -89,199 +89,34 @@ atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/main.c.s"
 	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/main.c -o CMakeFiles/atlast-crypto.dir/main.c.s
 
-atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
-atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.o: atlast-crypto/atl_common/common_atl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.o"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/atl_common/common_atl.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.o: atlast-crypto/wrap_libwally/wrap_wally_core.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.o"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_libwally/wrap_wally_core.c
 
-atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.i"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/atl_common/common_atl.c > CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.i
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.i"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_libwally/wrap_wally_core.c > CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.i
 
-atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.s"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/atl_common/common_atl.c -o CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.s
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.o: atlast-crypto/wrap_crypto/wrap_aes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.o"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_aes.c
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.i"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_aes.c > CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.i
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.s"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_aes.c -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.s
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.o: atlast-crypto/wrap_crypto/wrap_base32.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.o"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_base32.c
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.i"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_base32.c > CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.i
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.s"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_base32.c -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.s
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o: atlast-crypto/wrap_crypto/wrap_bip32.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_bip32.c
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.i"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_bip32.c > CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.i
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.s"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_bip32.c -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.s
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.o: atlast-crypto/wrap_crypto/wrap_bip39.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.o"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_bip39.c
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.i"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_bip39.c > CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.i
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.s"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_bip39.c -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.s
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o: atlast-crypto/wrap_crypto/wrap_ecdsa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_ecdsa.c
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.i"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_ecdsa.c > CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.i
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.s"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_ecdsa.c -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.s
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o: atlast-crypto/wrap_crypto/wrap_hasher.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hasher.c
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.i"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hasher.c > CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.i
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.s"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hasher.c -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.s
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o: atlast-crypto/wrap_crypto/wrap_hmac.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hmac.c
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.i"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hmac.c > CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.i
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.s"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hmac.c -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.s
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o: atlast-crypto/wrap_crypto/wrap_hmac_drbg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hmac_drbg.c
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.i"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hmac_drbg.c > CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.i
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.s"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_hmac_drbg.c -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.s
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.o: atlast-crypto/wrap_crypto/wrap_sha2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.o"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_sha2.c
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.i"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_sha2.c > CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.i
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.s"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_sha2.c -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.s
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o: atlast-crypto/wrap_crypto/wrap_sha3.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_sha3.c
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.i"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_sha3.c > CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.i
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.s"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_sha3.c -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.s
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.o: atlast-crypto/wrap_crypto/wrap_slip39.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.o"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_slip39.c
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.i"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_slip39.c > CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.i
-
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.s"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_crypto/wrap_slip39.c -o CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.s
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.s"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_libwally/wrap_wally_core.c -o CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.s
 
 # Object files for target atlast-crypto
 atlast__crypto_OBJECTS = \
 "CMakeFiles/atlast-crypto.dir/main.c.o" \
-"CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.o" \
-"CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.o" \
-"CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.o" \
-"CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o" \
-"CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.o" \
-"CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o" \
-"CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o" \
-"CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o" \
-"CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o" \
-"CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.o" \
-"CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o" \
-"CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.o"
+"CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.o"
 
 # External object files for target atlast-crypto
 atlast__crypto_EXTERNAL_OBJECTS =
 
 atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o
-atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.o
-atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.o
-atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.o
-atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o
-atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.o
-atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o
-atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o
-atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o
-atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o
-atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.o
-atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o
-atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.o
+atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.o
 atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make
 atlast-crypto/atlast-crypto: atlast-forth/atlast-1.2/libatlast.a
-atlast-crypto/atlast-crypto: crypto/libcrypto.a
+atlast-crypto/atlast-crypto: libwally-core/libwallycore.a
 atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C executable atlast-crypto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable atlast-crypto"
 	cd /home/grenada/proj/atlast-crypto/atlast-crypto && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/atlast-crypto.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

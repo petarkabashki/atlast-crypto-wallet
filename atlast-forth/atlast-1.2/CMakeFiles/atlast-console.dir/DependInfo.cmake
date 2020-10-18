@@ -19,6 +19,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "atlast-forth/atlast-1.2/."
   "atlast-forth/atlast-1.2"
   )
 

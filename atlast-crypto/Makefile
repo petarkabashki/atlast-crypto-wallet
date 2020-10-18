@@ -144,33 +144,6 @@ atlast-crypto/fast:
 	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/build
 .PHONY : atlast-crypto/fast
 
-atl_common/common_atl.o: atl_common/common_atl.c.o
-
-.PHONY : atl_common/common_atl.o
-
-# target to build an object file
-atl_common/common_atl.c.o:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.o
-.PHONY : atl_common/common_atl.c.o
-
-atl_common/common_atl.i: atl_common/common_atl.c.i
-
-.PHONY : atl_common/common_atl.i
-
-# target to preprocess a source file
-atl_common/common_atl.c.i:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.i
-.PHONY : atl_common/common_atl.c.i
-
-atl_common/common_atl.s: atl_common/common_atl.c.s
-
-.PHONY : atl_common/common_atl.s
-
-# target to generate assembly for a file
-atl_common/common_atl.c.s:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_common/common_atl.c.s
-.PHONY : atl_common/common_atl.c.s
-
 main.o: main.c.o
 
 .PHONY : main.o
@@ -198,302 +171,32 @@ main.c.s:
 	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.s
 .PHONY : main.c.s
 
-wrap_crypto/wrap_aes.o: wrap_crypto/wrap_aes.c.o
+wrap_libwally/wrap_wally_core.o: wrap_libwally/wrap_wally_core.c.o
 
-.PHONY : wrap_crypto/wrap_aes.o
-
-# target to build an object file
-wrap_crypto/wrap_aes.c.o:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.o
-.PHONY : wrap_crypto/wrap_aes.c.o
-
-wrap_crypto/wrap_aes.i: wrap_crypto/wrap_aes.c.i
-
-.PHONY : wrap_crypto/wrap_aes.i
-
-# target to preprocess a source file
-wrap_crypto/wrap_aes.c.i:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.i
-.PHONY : wrap_crypto/wrap_aes.c.i
-
-wrap_crypto/wrap_aes.s: wrap_crypto/wrap_aes.c.s
-
-.PHONY : wrap_crypto/wrap_aes.s
-
-# target to generate assembly for a file
-wrap_crypto/wrap_aes.c.s:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_aes.c.s
-.PHONY : wrap_crypto/wrap_aes.c.s
-
-wrap_crypto/wrap_base32.o: wrap_crypto/wrap_base32.c.o
-
-.PHONY : wrap_crypto/wrap_base32.o
+.PHONY : wrap_libwally/wrap_wally_core.o
 
 # target to build an object file
-wrap_crypto/wrap_base32.c.o:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.o
-.PHONY : wrap_crypto/wrap_base32.c.o
+wrap_libwally/wrap_wally_core.c.o:
+	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.o
+.PHONY : wrap_libwally/wrap_wally_core.c.o
 
-wrap_crypto/wrap_base32.i: wrap_crypto/wrap_base32.c.i
+wrap_libwally/wrap_wally_core.i: wrap_libwally/wrap_wally_core.c.i
 
-.PHONY : wrap_crypto/wrap_base32.i
-
-# target to preprocess a source file
-wrap_crypto/wrap_base32.c.i:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.i
-.PHONY : wrap_crypto/wrap_base32.c.i
-
-wrap_crypto/wrap_base32.s: wrap_crypto/wrap_base32.c.s
-
-.PHONY : wrap_crypto/wrap_base32.s
-
-# target to generate assembly for a file
-wrap_crypto/wrap_base32.c.s:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_base32.c.s
-.PHONY : wrap_crypto/wrap_base32.c.s
-
-wrap_crypto/wrap_bip32.o: wrap_crypto/wrap_bip32.c.o
-
-.PHONY : wrap_crypto/wrap_bip32.o
-
-# target to build an object file
-wrap_crypto/wrap_bip32.c.o:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.o
-.PHONY : wrap_crypto/wrap_bip32.c.o
-
-wrap_crypto/wrap_bip32.i: wrap_crypto/wrap_bip32.c.i
-
-.PHONY : wrap_crypto/wrap_bip32.i
+.PHONY : wrap_libwally/wrap_wally_core.i
 
 # target to preprocess a source file
-wrap_crypto/wrap_bip32.c.i:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.i
-.PHONY : wrap_crypto/wrap_bip32.c.i
+wrap_libwally/wrap_wally_core.c.i:
+	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.i
+.PHONY : wrap_libwally/wrap_wally_core.c.i
 
-wrap_crypto/wrap_bip32.s: wrap_crypto/wrap_bip32.c.s
+wrap_libwally/wrap_wally_core.s: wrap_libwally/wrap_wally_core.c.s
 
-.PHONY : wrap_crypto/wrap_bip32.s
-
-# target to generate assembly for a file
-wrap_crypto/wrap_bip32.c.s:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip32.c.s
-.PHONY : wrap_crypto/wrap_bip32.c.s
-
-wrap_crypto/wrap_bip39.o: wrap_crypto/wrap_bip39.c.o
-
-.PHONY : wrap_crypto/wrap_bip39.o
-
-# target to build an object file
-wrap_crypto/wrap_bip39.c.o:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.o
-.PHONY : wrap_crypto/wrap_bip39.c.o
-
-wrap_crypto/wrap_bip39.i: wrap_crypto/wrap_bip39.c.i
-
-.PHONY : wrap_crypto/wrap_bip39.i
-
-# target to preprocess a source file
-wrap_crypto/wrap_bip39.c.i:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.i
-.PHONY : wrap_crypto/wrap_bip39.c.i
-
-wrap_crypto/wrap_bip39.s: wrap_crypto/wrap_bip39.c.s
-
-.PHONY : wrap_crypto/wrap_bip39.s
+.PHONY : wrap_libwally/wrap_wally_core.s
 
 # target to generate assembly for a file
-wrap_crypto/wrap_bip39.c.s:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_bip39.c.s
-.PHONY : wrap_crypto/wrap_bip39.c.s
-
-wrap_crypto/wrap_ecdsa.o: wrap_crypto/wrap_ecdsa.c.o
-
-.PHONY : wrap_crypto/wrap_ecdsa.o
-
-# target to build an object file
-wrap_crypto/wrap_ecdsa.c.o:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.o
-.PHONY : wrap_crypto/wrap_ecdsa.c.o
-
-wrap_crypto/wrap_ecdsa.i: wrap_crypto/wrap_ecdsa.c.i
-
-.PHONY : wrap_crypto/wrap_ecdsa.i
-
-# target to preprocess a source file
-wrap_crypto/wrap_ecdsa.c.i:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.i
-.PHONY : wrap_crypto/wrap_ecdsa.c.i
-
-wrap_crypto/wrap_ecdsa.s: wrap_crypto/wrap_ecdsa.c.s
-
-.PHONY : wrap_crypto/wrap_ecdsa.s
-
-# target to generate assembly for a file
-wrap_crypto/wrap_ecdsa.c.s:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_ecdsa.c.s
-.PHONY : wrap_crypto/wrap_ecdsa.c.s
-
-wrap_crypto/wrap_hasher.o: wrap_crypto/wrap_hasher.c.o
-
-.PHONY : wrap_crypto/wrap_hasher.o
-
-# target to build an object file
-wrap_crypto/wrap_hasher.c.o:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.o
-.PHONY : wrap_crypto/wrap_hasher.c.o
-
-wrap_crypto/wrap_hasher.i: wrap_crypto/wrap_hasher.c.i
-
-.PHONY : wrap_crypto/wrap_hasher.i
-
-# target to preprocess a source file
-wrap_crypto/wrap_hasher.c.i:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.i
-.PHONY : wrap_crypto/wrap_hasher.c.i
-
-wrap_crypto/wrap_hasher.s: wrap_crypto/wrap_hasher.c.s
-
-.PHONY : wrap_crypto/wrap_hasher.s
-
-# target to generate assembly for a file
-wrap_crypto/wrap_hasher.c.s:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hasher.c.s
-.PHONY : wrap_crypto/wrap_hasher.c.s
-
-wrap_crypto/wrap_hmac.o: wrap_crypto/wrap_hmac.c.o
-
-.PHONY : wrap_crypto/wrap_hmac.o
-
-# target to build an object file
-wrap_crypto/wrap_hmac.c.o:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.o
-.PHONY : wrap_crypto/wrap_hmac.c.o
-
-wrap_crypto/wrap_hmac.i: wrap_crypto/wrap_hmac.c.i
-
-.PHONY : wrap_crypto/wrap_hmac.i
-
-# target to preprocess a source file
-wrap_crypto/wrap_hmac.c.i:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.i
-.PHONY : wrap_crypto/wrap_hmac.c.i
-
-wrap_crypto/wrap_hmac.s: wrap_crypto/wrap_hmac.c.s
-
-.PHONY : wrap_crypto/wrap_hmac.s
-
-# target to generate assembly for a file
-wrap_crypto/wrap_hmac.c.s:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac.c.s
-.PHONY : wrap_crypto/wrap_hmac.c.s
-
-wrap_crypto/wrap_hmac_drbg.o: wrap_crypto/wrap_hmac_drbg.c.o
-
-.PHONY : wrap_crypto/wrap_hmac_drbg.o
-
-# target to build an object file
-wrap_crypto/wrap_hmac_drbg.c.o:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.o
-.PHONY : wrap_crypto/wrap_hmac_drbg.c.o
-
-wrap_crypto/wrap_hmac_drbg.i: wrap_crypto/wrap_hmac_drbg.c.i
-
-.PHONY : wrap_crypto/wrap_hmac_drbg.i
-
-# target to preprocess a source file
-wrap_crypto/wrap_hmac_drbg.c.i:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.i
-.PHONY : wrap_crypto/wrap_hmac_drbg.c.i
-
-wrap_crypto/wrap_hmac_drbg.s: wrap_crypto/wrap_hmac_drbg.c.s
-
-.PHONY : wrap_crypto/wrap_hmac_drbg.s
-
-# target to generate assembly for a file
-wrap_crypto/wrap_hmac_drbg.c.s:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_hmac_drbg.c.s
-.PHONY : wrap_crypto/wrap_hmac_drbg.c.s
-
-wrap_crypto/wrap_sha2.o: wrap_crypto/wrap_sha2.c.o
-
-.PHONY : wrap_crypto/wrap_sha2.o
-
-# target to build an object file
-wrap_crypto/wrap_sha2.c.o:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.o
-.PHONY : wrap_crypto/wrap_sha2.c.o
-
-wrap_crypto/wrap_sha2.i: wrap_crypto/wrap_sha2.c.i
-
-.PHONY : wrap_crypto/wrap_sha2.i
-
-# target to preprocess a source file
-wrap_crypto/wrap_sha2.c.i:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.i
-.PHONY : wrap_crypto/wrap_sha2.c.i
-
-wrap_crypto/wrap_sha2.s: wrap_crypto/wrap_sha2.c.s
-
-.PHONY : wrap_crypto/wrap_sha2.s
-
-# target to generate assembly for a file
-wrap_crypto/wrap_sha2.c.s:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha2.c.s
-.PHONY : wrap_crypto/wrap_sha2.c.s
-
-wrap_crypto/wrap_sha3.o: wrap_crypto/wrap_sha3.c.o
-
-.PHONY : wrap_crypto/wrap_sha3.o
-
-# target to build an object file
-wrap_crypto/wrap_sha3.c.o:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.o
-.PHONY : wrap_crypto/wrap_sha3.c.o
-
-wrap_crypto/wrap_sha3.i: wrap_crypto/wrap_sha3.c.i
-
-.PHONY : wrap_crypto/wrap_sha3.i
-
-# target to preprocess a source file
-wrap_crypto/wrap_sha3.c.i:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.i
-.PHONY : wrap_crypto/wrap_sha3.c.i
-
-wrap_crypto/wrap_sha3.s: wrap_crypto/wrap_sha3.c.s
-
-.PHONY : wrap_crypto/wrap_sha3.s
-
-# target to generate assembly for a file
-wrap_crypto/wrap_sha3.c.s:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_sha3.c.s
-.PHONY : wrap_crypto/wrap_sha3.c.s
-
-wrap_crypto/wrap_slip39.o: wrap_crypto/wrap_slip39.c.o
-
-.PHONY : wrap_crypto/wrap_slip39.o
-
-# target to build an object file
-wrap_crypto/wrap_slip39.c.o:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.o
-.PHONY : wrap_crypto/wrap_slip39.c.o
-
-wrap_crypto/wrap_slip39.i: wrap_crypto/wrap_slip39.c.i
-
-.PHONY : wrap_crypto/wrap_slip39.i
-
-# target to preprocess a source file
-wrap_crypto/wrap_slip39.c.i:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.i
-.PHONY : wrap_crypto/wrap_slip39.c.i
-
-wrap_crypto/wrap_slip39.s: wrap_crypto/wrap_slip39.c.s
-
-.PHONY : wrap_crypto/wrap_slip39.s
-
-# target to generate assembly for a file
-wrap_crypto/wrap_slip39.c.s:
-	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_crypto/wrap_slip39.c.s
-.PHONY : wrap_crypto/wrap_slip39.c.s
+wrap_libwally/wrap_wally_core.c.s:
+	cd /home/grenada/proj/atlast-crypto && $(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.s
+.PHONY : wrap_libwally/wrap_wally_core.c.s
 
 # Help Target
 help:
@@ -504,45 +207,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... atlast-crypto"
-	@echo "... atl_common/common_atl.o"
-	@echo "... atl_common/common_atl.i"
-	@echo "... atl_common/common_atl.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... wrap_crypto/wrap_aes.o"
-	@echo "... wrap_crypto/wrap_aes.i"
-	@echo "... wrap_crypto/wrap_aes.s"
-	@echo "... wrap_crypto/wrap_base32.o"
-	@echo "... wrap_crypto/wrap_base32.i"
-	@echo "... wrap_crypto/wrap_base32.s"
-	@echo "... wrap_crypto/wrap_bip32.o"
-	@echo "... wrap_crypto/wrap_bip32.i"
-	@echo "... wrap_crypto/wrap_bip32.s"
-	@echo "... wrap_crypto/wrap_bip39.o"
-	@echo "... wrap_crypto/wrap_bip39.i"
-	@echo "... wrap_crypto/wrap_bip39.s"
-	@echo "... wrap_crypto/wrap_ecdsa.o"
-	@echo "... wrap_crypto/wrap_ecdsa.i"
-	@echo "... wrap_crypto/wrap_ecdsa.s"
-	@echo "... wrap_crypto/wrap_hasher.o"
-	@echo "... wrap_crypto/wrap_hasher.i"
-	@echo "... wrap_crypto/wrap_hasher.s"
-	@echo "... wrap_crypto/wrap_hmac.o"
-	@echo "... wrap_crypto/wrap_hmac.i"
-	@echo "... wrap_crypto/wrap_hmac.s"
-	@echo "... wrap_crypto/wrap_hmac_drbg.o"
-	@echo "... wrap_crypto/wrap_hmac_drbg.i"
-	@echo "... wrap_crypto/wrap_hmac_drbg.s"
-	@echo "... wrap_crypto/wrap_sha2.o"
-	@echo "... wrap_crypto/wrap_sha2.i"
-	@echo "... wrap_crypto/wrap_sha2.s"
-	@echo "... wrap_crypto/wrap_sha3.o"
-	@echo "... wrap_crypto/wrap_sha3.i"
-	@echo "... wrap_crypto/wrap_sha3.s"
-	@echo "... wrap_crypto/wrap_slip39.o"
-	@echo "... wrap_crypto/wrap_slip39.i"
-	@echo "... wrap_crypto/wrap_slip39.s"
+	@echo "... wrap_libwally/wrap_wally_core.o"
+	@echo "... wrap_libwally/wrap_wally_core.i"
+	@echo "... wrap_libwally/wrap_wally_core.s"
 .PHONY : help
 
 

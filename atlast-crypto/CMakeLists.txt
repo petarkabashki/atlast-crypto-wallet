@@ -20,27 +20,40 @@ add_executable(${PROJECT_NAME}
     # "atl_primitives/sha3_wrap.c"
     # "atl_primitives/slip39_wrap.c"
     
-    "atl_common/common_atl.c"
+    # "atl_common/common_atl.c"
 
-    "wrap_crypto/wrap_aes.c"
-    "wrap_crypto/wrap_base32.c"
-    # "wrap_crypto/wrap_bignum.c"
-    "wrap_crypto/wrap_bip32.c"
-    "wrap_crypto/wrap_bip39.c"
-    "wrap_crypto/wrap_ecdsa.c"
-    "wrap_crypto/wrap_hasher.c"
-    "wrap_crypto/wrap_hmac.c"
-    "wrap_crypto/wrap_hmac_drbg.c"
-    "wrap_crypto/wrap_sha2.c"
-    "wrap_crypto/wrap_sha3.c"
-    "wrap_crypto/wrap_slip39.c"
+    # //crypto
+    # "wrap_crypto/wrap_aes.c"
+    # "wrap_crypto/wrap_base32.c"
+    # # "wrap_crypto/wrap_bignum.c"
+    # "wrap_crypto/wrap_bip32.c"
+    # "wrap_crypto/wrap_bip39.c"
+    # "wrap_crypto/wrap_ecdsa.c"
+    # "wrap_crypto/wrap_hasher.c"
+    # "wrap_crypto/wrap_hmac.c"
+    # "wrap_crypto/wrap_hmac_drbg.c"
+    # "wrap_crypto/wrap_sha2.c"
+    # "wrap_crypto/wrap_sha3.c"
+    # "wrap_crypto/wrap_slip39.c"
+
+    # //wallycore
+    #  ls ./wrap_libwally*.c | sort | uniq | sed -e 's_\./_"_' |  sed -e 's_$_"_'
+    # "wrap_libwally/wrap_wally_address.c"
+    # "wrap_libwally/wrap_wally_bip32.c"
+    # "wrap_libwally/wrap_wally_bip38.c"
+    # "wrap_libwally/wrap_wally_bip39.c"
+    "wrap_libwally/wrap_wally_core.c"
+    # "wrap_libwally/wrap_wally_crypto.c"
+    # "wrap_libwally/wrap_wally_transaction.c"
+
 
 )
 
-target_link_libraries(${PROJECT_NAME} atlast crypto m)
+target_link_libraries(${PROJECT_NAME} atlast wallycore m)
 
 # -g -Wall -DMEMSTAT -DALIGNMENT -DEXPORT -DREADONLYSTRINGS
 add_definitions(-g -Wall -DMEMSTAT -DALIGNMENT -DEXPORT -DREADONLYSTRINGS -DNOMEMCHECK)
 # -DNOMEMCHECK
 include_directories("../atlast-forth/atlast-1.2")
-include_directories("../crypto")
+include_directories("../libwally-core")
+# include_directories("../crypto")
