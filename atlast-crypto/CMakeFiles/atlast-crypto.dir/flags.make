@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DALIGNMENT -DEXPORT -DMEMSTAT -DNOMEMCHECK -DREADONLYSTRINGS
 
-C_INCLUDES = -I/home/grenada/proj/atlast-crypto/atlast-crypto/../atlast-forth/atlast-1.2 -I/home/grenada/proj/atlast-crypto/atlast-crypto/../libwally-core -I/home/grenada/proj/atlast-crypto/atlast-forth/atlast-1.2 -I/home/grenada/proj/atlast-crypto/libwally-core/include
+C_INCLUDES = -I/home/grenada/proj/atlast-crypto/atlast-crypto/../atlast-forth/atlast-1.2 -I/home/grenada/proj/atlast-crypto/atlast-crypto/../wallycore/include -I/home/grenada/proj/atlast-crypto/atlast-forth/atlast-1.2 -I/home/grenada/proj/atlast-crypto/wallycore/src/secp256k1/include -I/home/grenada/proj/atlast-crypto/wallycore/src/secp256k1/src -I/home/grenada/proj/atlast-crypto/wallycore/include -I/home/grenada/proj/atlast-crypto/wallycore/src
 
 C_FLAGS =   -g -Wall
 

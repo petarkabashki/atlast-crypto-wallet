@@ -237,10 +237,16 @@ atlast_BINARY_DIR:STATIC=/home/grenada/proj/atlast-crypto/atlast-forth/atlast-1.
 atlast_SOURCE_DIR:STATIC=/home/grenada/proj/atlast-crypto/atlast-forth/atlast-1.2
 
 //Value Computed by CMake
-crypto_BINARY_DIR:STATIC=/home/grenada/proj/atlast-crypto/crypto
+secp256k1_BINARY_DIR:STATIC=/home/grenada/proj/atlast-crypto/wallycore/src/secp256k1
 
 //Value Computed by CMake
-crypto_SOURCE_DIR:STATIC=/home/grenada/proj/atlast-crypto/crypto
+secp256k1_SOURCE_DIR:STATIC=/home/grenada/proj/atlast-crypto/wallycore/src/secp256k1
+
+//Value Computed by CMake
+wallycore_BINARY_DIR:STATIC=/home/grenada/proj/atlast-crypto/wallycore
+
+//Value Computed by CMake
+wallycore_SOURCE_DIR:STATIC=/home/grenada/proj/atlast-crypto/wallycore
 
 
 ########################
@@ -349,7 +355,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

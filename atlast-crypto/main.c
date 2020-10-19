@@ -8,6 +8,8 @@
 #include "atldef.h"
 
 
+#include "atl_extensions/extensions_atl.h"
+
 // #include "atl_common/common_atl.h"
 
 // generate with
@@ -42,7 +44,10 @@
 // #include "wrap_crypto/wrap_slip39.h"
 
 
-#include "wrap_libwally/wrap_wally_core.h"
+// #include "wrap_secp256k1/wrap_secp256k1.h"
+
+// #include "wrap_wallycore/wallycore_common.h"
+#include "wrap_wallycore/wrap_wally_core.h"
 
 #define FALSE 0
 #define TRUE 1
@@ -73,6 +78,8 @@ char *argv[];
 {
 	// printf("Size of HDNode: %li\n", sizeof(HDNode));
 	atl_init();
+
+atl_primdef(extensions_fcns);
 
 // generated with
 // rg -INoe '(\w+_fcns)\[' ./atl_primitives/ -r '$1' | sort | uniq | sed -e 's_.*_atl\_primdef(\0);_'
@@ -108,6 +115,9 @@ char *argv[];
 // atl_primdef(slip39_fcns);
 
 atl_primdef(wally_core_fcns);
+
+
+// atl_primdef(secp256k1_fcns);
 
 	int i;
 	int fname = FALSE, defmode = FALSE;

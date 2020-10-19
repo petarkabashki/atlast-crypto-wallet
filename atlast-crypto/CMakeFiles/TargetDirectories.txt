@@ -1,3 +1,0 @@
-/home/grenada/proj/atlast-crypto/atlast-crypto/CMakeFiles/rebuild_cache.dir
-/home/grenada/proj/atlast-crypto/atlast-crypto/CMakeFiles/edit_cache.dir
-/home/grenada/proj/atlast-crypto/atlast-crypto/CMakeFiles/atlast-crypto.dir

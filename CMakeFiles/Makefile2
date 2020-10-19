@@ -72,22 +72,25 @@ CMAKE_BINARY_DIR = /home/grenada/proj/atlast-crypto
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: crypto/all
+all: wallycore/all
 all: atlast-forth/atlast-1.2/all
+all: wallycore/src/secp256k1/all
 all: atlast-crypto/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: crypto/preinstall
+preinstall: wallycore/preinstall
 preinstall: atlast-forth/atlast-1.2/preinstall
+preinstall: wallycore/src/secp256k1/preinstall
 preinstall: atlast-crypto/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: crypto/clean
+clean: wallycore/clean
 clean: atlast-forth/atlast-1.2/clean
+clean: wallycore/src/secp256k1/clean
 clean: atlast-crypto/clean
 
 .PHONY : clean
@@ -131,49 +134,67 @@ atlast-forth/atlast-1.2/clean: atlast-forth/atlast-1.2/CMakeFiles/atlast.dir/cle
 .PHONY : atlast-forth/atlast-1.2/clean
 
 #=============================================================================
-# Directory level rules for directory crypto
+# Directory level rules for directory wallycore
 
 # Recursive "all" directory target.
-crypto/all: crypto/CMakeFiles/crypto.dir/all
+wallycore/all: wallycore/CMakeFiles/wallycore.dir/all
 
-.PHONY : crypto/all
+.PHONY : wallycore/all
 
 # Recursive "preinstall" directory target.
-crypto/preinstall:
+wallycore/preinstall:
 
-.PHONY : crypto/preinstall
+.PHONY : wallycore/preinstall
 
 # Recursive "clean" directory target.
-crypto/clean: crypto/CMakeFiles/crypto.dir/clean
+wallycore/clean: wallycore/CMakeFiles/wallycore.dir/clean
 
-.PHONY : crypto/clean
+.PHONY : wallycore/clean
 
 #=============================================================================
-# Target rules for target crypto/CMakeFiles/crypto.dir
+# Directory level rules for directory wallycore/src/secp256k1
+
+# Recursive "all" directory target.
+wallycore/src/secp256k1/all: wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/all
+
+.PHONY : wallycore/src/secp256k1/all
+
+# Recursive "preinstall" directory target.
+wallycore/src/secp256k1/preinstall:
+
+.PHONY : wallycore/src/secp256k1/preinstall
+
+# Recursive "clean" directory target.
+wallycore/src/secp256k1/clean: wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/clean
+
+.PHONY : wallycore/src/secp256k1/clean
+
+#=============================================================================
+# Target rules for target wallycore/CMakeFiles/wallycore.dir
 
 # All Build rule for target.
-crypto/CMakeFiles/crypto.dir/all:
-	$(MAKE) $(MAKESILENT) -f crypto/CMakeFiles/crypto.dir/build.make crypto/CMakeFiles/crypto.dir/depend
-	$(MAKE) $(MAKESILENT) -f crypto/CMakeFiles/crypto.dir/build.make crypto/CMakeFiles/crypto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75 "Built target crypto"
-.PHONY : crypto/CMakeFiles/crypto.dir/all
+wallycore/CMakeFiles/wallycore.dir/all: wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/all
+	$(MAKE) $(MAKESILENT) -f wallycore/CMakeFiles/wallycore.dir/build.make wallycore/CMakeFiles/wallycore.dir/depend
+	$(MAKE) $(MAKESILENT) -f wallycore/CMakeFiles/wallycore.dir/build.make wallycore/CMakeFiles/wallycore.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54 "Built target wallycore"
+.PHONY : wallycore/CMakeFiles/wallycore.dir/all
 
 # Build rule for subdir invocation for target.
-crypto/CMakeFiles/crypto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/grenada/proj/atlast-crypto/CMakeFiles 57
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 crypto/CMakeFiles/crypto.dir/all
+wallycore/CMakeFiles/wallycore.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/grenada/proj/atlast-crypto/CMakeFiles 40
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wallycore/CMakeFiles/wallycore.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/grenada/proj/atlast-crypto/CMakeFiles 0
-.PHONY : crypto/CMakeFiles/crypto.dir/rule
+.PHONY : wallycore/CMakeFiles/wallycore.dir/rule
 
 # Convenience name for target.
-crypto: crypto/CMakeFiles/crypto.dir/rule
+wallycore: wallycore/CMakeFiles/wallycore.dir/rule
 
-.PHONY : crypto
+.PHONY : wallycore
 
 # clean rule for target.
-crypto/CMakeFiles/crypto.dir/clean:
-	$(MAKE) $(MAKESILENT) -f crypto/CMakeFiles/crypto.dir/build.make crypto/CMakeFiles/crypto.dir/clean
-.PHONY : crypto/CMakeFiles/crypto.dir/clean
+wallycore/CMakeFiles/wallycore.dir/clean:
+	$(MAKE) $(MAKESILENT) -f wallycore/CMakeFiles/wallycore.dir/build.make wallycore/CMakeFiles/wallycore.dir/clean
+.PHONY : wallycore/CMakeFiles/wallycore.dir/clean
 
 #=============================================================================
 # Target rules for target atlast-forth/atlast-1.2/CMakeFiles/atlast-console.dir
@@ -230,19 +251,47 @@ atlast-forth/atlast-1.2/CMakeFiles/atlast.dir/clean:
 .PHONY : atlast-forth/atlast-1.2/CMakeFiles/atlast.dir/clean
 
 #=============================================================================
+# Target rules for target wallycore/src/secp256k1/CMakeFiles/secp256k1.dir
+
+# All Build rule for target.
+wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/all:
+	$(MAKE) $(MAKESILENT) -f wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/build.make wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/depend
+	$(MAKE) $(MAKESILENT) -f wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/build.make wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=15,16,17,18,19,20 "Built target secp256k1"
+.PHONY : wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/all
+
+# Build rule for subdir invocation for target.
+wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/grenada/proj/atlast-crypto/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/grenada/proj/atlast-crypto/CMakeFiles 0
+.PHONY : wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/rule
+
+# Convenience name for target.
+secp256k1: wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/rule
+
+.PHONY : secp256k1
+
+# clean rule for target.
+wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/build.make wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/clean
+.PHONY : wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/clean
+
+#=============================================================================
 # Target rules for target atlast-crypto/CMakeFiles/atlast-crypto.dir
 
 # All Build rule for target.
-atlast-crypto/CMakeFiles/atlast-crypto.dir/all: crypto/CMakeFiles/crypto.dir/all
+atlast-crypto/CMakeFiles/atlast-crypto.dir/all: wallycore/CMakeFiles/wallycore.dir/all
 atlast-crypto/CMakeFiles/atlast-crypto.dir/all: atlast-forth/atlast-1.2/CMakeFiles/atlast.dir/all
+atlast-crypto/CMakeFiles/atlast-crypto.dir/all: wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/all
 	$(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/depend
 	$(MAKE) $(MAKESILENT) -f atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make atlast-crypto/CMakeFiles/atlast-crypto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target atlast-crypto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14 "Built target atlast-crypto"
 .PHONY : atlast-crypto/CMakeFiles/atlast-crypto.dir/all
 
 # Build rule for subdir invocation for target.
 atlast-crypto/CMakeFiles/atlast-crypto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/grenada/proj/atlast-crypto/CMakeFiles 73
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/grenada/proj/atlast-crypto/CMakeFiles 52
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 atlast-crypto/CMakeFiles/atlast-crypto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/grenada/proj/atlast-crypto/CMakeFiles 0
 .PHONY : atlast-crypto/CMakeFiles/atlast-crypto.dir/rule

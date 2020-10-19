@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/grenada/proj/atlast-crypto/CMakeFiles/secp256k1"
+		},
+		{
+			"file" : "/home/grenada/proj/atlast-crypto/CMakeFiles/secp256k1.rule"
+		},
+		{
+			"file" : "/home/grenada/proj/atlast-crypto/CMakeFiles/secp256k1-complete.rule"
+		},
+		{
+			"file" : "/home/grenada/proj/atlast-crypto/secp256k1-prefix/src/secp256k1-stamp/secp256k1-install.rule"
+		},
+		{
+			"file" : "/home/grenada/proj/atlast-crypto/secp256k1-prefix/src/secp256k1-stamp/secp256k1-mkdir.rule"
+		},
+		{
+			"file" : "/home/grenada/proj/atlast-crypto/secp256k1-prefix/src/secp256k1-stamp/secp256k1-download.rule"
+		},
+		{
+			"file" : "/home/grenada/proj/atlast-crypto/secp256k1-prefix/src/secp256k1-stamp/secp256k1-update.rule"
+		},
+		{
+			"file" : "/home/grenada/proj/atlast-crypto/secp256k1-prefix/src/secp256k1-stamp/secp256k1-patch.rule"
+		},
+		{
+			"file" : "/home/grenada/proj/atlast-crypto/secp256k1-prefix/src/secp256k1-stamp/secp256k1-configure.rule"
+		},
+		{
+			"file" : "/home/grenada/proj/atlast-crypto/secp256k1-prefix/src/secp256k1-stamp/secp256k1-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"secp256k1"
+		],
+		"name" : "secp256k1"
+	}
+}

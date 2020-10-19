@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named crypto
+# Target rules for targets named wallycore
 
 # Build rule for target.
-crypto: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 crypto
-.PHONY : crypto
+wallycore: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wallycore
+.PHONY : wallycore
 
 # fast build rule for target.
-crypto/fast:
-	$(MAKE) $(MAKESILENT) -f crypto/CMakeFiles/crypto.dir/build.make crypto/CMakeFiles/crypto.dir/build
-.PHONY : crypto/fast
+wallycore/fast:
+	$(MAKE) $(MAKESILENT) -f wallycore/CMakeFiles/wallycore.dir/build.make wallycore/CMakeFiles/wallycore.dir/build
+.PHONY : wallycore/fast
 
 #=============================================================================
 # Target rules for targets named atlast-console
@@ -169,6 +169,19 @@ atlast/fast:
 .PHONY : atlast/fast
 
 #=============================================================================
+# Target rules for targets named secp256k1
+
+# Build rule for target.
+secp256k1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 secp256k1
+.PHONY : secp256k1
+
+# fast build rule for target.
+secp256k1/fast:
+	$(MAKE) $(MAKESILENT) -f wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/build.make wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/build
+.PHONY : secp256k1/fast
+
+#=============================================================================
 # Target rules for targets named atlast-crypto
 
 # Build rule for target.
@@ -192,7 +205,8 @@ help:
 	@echo "... atlast"
 	@echo "... atlast-console"
 	@echo "... atlast-crypto"
-	@echo "... crypto"
+	@echo "... secp256k1"
+	@echo "... wallycore"
 .PHONY : help
 
 

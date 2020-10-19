@@ -89,34 +89,141 @@ atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/main.c.s"
 	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/main.c -o CMakeFiles/atlast-crypto.dir/main.c.s
 
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.o: atlast-crypto/wrap_libwally/wrap_wally_core.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.o"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_libwally/wrap_wally_core.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_extensions/extensions_atl.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_extensions/extensions_atl.c.o: atlast-crypto/atl_extensions/extensions_atl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_extensions/extensions_atl.c.o"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/atl_extensions/extensions_atl.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/atl_extensions/extensions_atl.c
 
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.i"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_libwally/wrap_wally_core.c > CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.i
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_extensions/extensions_atl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/atl_extensions/extensions_atl.c.i"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/atl_extensions/extensions_atl.c > CMakeFiles/atlast-crypto.dir/atl_extensions/extensions_atl.c.i
 
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.s"
-	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_libwally/wrap_wally_core.c -o CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.s
+atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_extensions/extensions_atl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/atl_extensions/extensions_atl.c.s"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/atl_extensions/extensions_atl.c -o CMakeFiles/atlast-crypto.dir/atl_extensions/extensions_atl.c.s
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.o: atlast-crypto/wrap_wallycore/wrap_wally_address.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.o"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_address.c
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.i"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_address.c > CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.i
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.s"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_address.c -o CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.s
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip32.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip32.c.o: atlast-crypto/wrap_wallycore/wrap_wally_bip32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip32.c.o"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip32.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_bip32.c
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip32.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip32.c.i"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_bip32.c > CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip32.c.i
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip32.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip32.c.s"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_bip32.c -o CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip32.c.s
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip38.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip38.c.o: atlast-crypto/wrap_wallycore/wrap_wally_bip38.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip38.c.o"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip38.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_bip38.c
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip38.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip38.c.i"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_bip38.c > CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip38.c.i
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip38.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip38.c.s"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_bip38.c -o CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip38.c.s
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip39.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip39.c.o: atlast-crypto/wrap_wallycore/wrap_wally_bip39.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip39.c.o"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip39.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_bip39.c
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip39.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip39.c.i"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_bip39.c > CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip39.c.i
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip39.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip39.c.s"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_bip39.c -o CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip39.c.s
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_core.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_core.c.o: atlast-crypto/wrap_wallycore/wrap_wally_core.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_core.c.o"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_core.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_core.c
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_core.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_core.c.i"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_core.c > CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_core.c.i
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_core.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_core.c.s"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_core.c -o CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_core.c.s
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_crypto.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_crypto.c.o: atlast-crypto/wrap_wallycore/wrap_wally_crypto.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_crypto.c.o"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_crypto.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_crypto.c
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_crypto.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_crypto.c.i"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_crypto.c > CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_crypto.c.i
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_crypto.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_crypto.c.s"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_crypto.c -o CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_crypto.c.s
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_transaction.c.o: atlast-crypto/CMakeFiles/atlast-crypto.dir/flags.make
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_transaction.c.o: atlast-crypto/wrap_wallycore/wrap_wally_transaction.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_transaction.c.o"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_transaction.c.o -c /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_transaction.c
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_transaction.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_transaction.c.i"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_transaction.c > CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_transaction.c.i
+
+atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_transaction.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_transaction.c.s"
+	cd /home/grenada/proj/atlast-crypto/atlast-crypto && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_transaction.c -o CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_transaction.c.s
 
 # Object files for target atlast-crypto
 atlast__crypto_OBJECTS = \
 "CMakeFiles/atlast-crypto.dir/main.c.o" \
-"CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.o"
+"CMakeFiles/atlast-crypto.dir/atl_extensions/extensions_atl.c.o" \
+"CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.o" \
+"CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip32.c.o" \
+"CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip38.c.o" \
+"CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip39.c.o" \
+"CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_core.c.o" \
+"CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_crypto.c.o" \
+"CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_transaction.c.o"
 
 # External object files for target atlast-crypto
 atlast__crypto_EXTERNAL_OBJECTS =
 
 atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o
-atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_libwally/wrap_wally_core.c.o
+atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_extensions/extensions_atl.c.o
+atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.o
+atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip32.c.o
+atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip38.c.o
+atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_bip39.c.o
+atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_core.c.o
+atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_crypto.c.o
+atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_transaction.c.o
 atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/build.make
 atlast-crypto/atlast-crypto: atlast-forth/atlast-1.2/libatlast.a
-atlast-crypto/atlast-crypto: libwally-core/libwallycore.a
+atlast-crypto/atlast-crypto: wallycore/src/secp256k1/libsecp256k1.a
+atlast-crypto/atlast-crypto: wallycore/libwallycore.a
+atlast-crypto/atlast-crypto: wallycore/src/secp256k1/libsecp256k1.a
 atlast-crypto/atlast-crypto: atlast-crypto/CMakeFiles/atlast-crypto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable atlast-crypto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/grenada/proj/atlast-crypto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable atlast-crypto"
 	cd /home/grenada/proj/atlast-crypto/atlast-crypto && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/atlast-crypto.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

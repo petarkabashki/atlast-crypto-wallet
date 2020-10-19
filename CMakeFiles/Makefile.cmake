@@ -13,7 +13,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeLists.txt"
   "atlast-crypto/CMakeLists.txt"
   "atlast-forth/atlast-1.2/CMakeLists.txt"
-  "crypto/CMakeLists.txt"
+  "wallycore/CMakeLists.txt"
+  "wallycore/src/secp256k1/CMakeLists.txt"
   "/usr/local/share/cmake-3.18/Modules/CMakeCInformation.cmake"
   "/usr/local/share/cmake-3.18/Modules/CMakeCXXInformation.cmake"
   "/usr/local/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -44,15 +45,17 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "crypto/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "wallycore/CMakeFiles/CMakeDirectoryInformation.cmake"
   "atlast-forth/atlast-1.2/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "wallycore/src/secp256k1/CMakeFiles/CMakeDirectoryInformation.cmake"
   "atlast-crypto/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "crypto/CMakeFiles/crypto.dir/DependInfo.cmake"
+  "wallycore/CMakeFiles/wallycore.dir/DependInfo.cmake"
   "atlast-forth/atlast-1.2/CMakeFiles/atlast-console.dir/DependInfo.cmake"
   "atlast-forth/atlast-1.2/CMakeFiles/atlast.dir/DependInfo.cmake"
+  "wallycore/src/secp256k1/CMakeFiles/secp256k1.dir/DependInfo.cmake"
   "atlast-crypto/CMakeFiles/atlast-crypto.dir/DependInfo.cmake"
   )

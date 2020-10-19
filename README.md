@@ -71,6 +71,7 @@ ecdsa_get_address(node2.public_key, addr_version, buf, buflen); QString address 
 
 \\\
 node2 HDN>PUBKEY wif_version buf buflen ecdsa_get_wif 
+
 ecdsa_get_wif(node2.private_key, wif_version, buf, buflen); QString wif = QString(buf);
 list->setItem(i, 0, new QTableWidgetItem(address));
 list->setItem(i, 1, new QTableWidgetItem(wif));

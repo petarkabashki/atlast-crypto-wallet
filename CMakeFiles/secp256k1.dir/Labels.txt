@@ -1,0 +1,13 @@
+# Target labels
+ secp256k1
+# Source files and their labels
+/home/grenada/proj/atlast-crypto/CMakeFiles/secp256k1
+/home/grenada/proj/atlast-crypto/CMakeFiles/secp256k1.rule
+/home/grenada/proj/atlast-crypto/CMakeFiles/secp256k1-complete.rule
+/home/grenada/proj/atlast-crypto/secp256k1-prefix/src/secp256k1-stamp/secp256k1-install.rule
+/home/grenada/proj/atlast-crypto/secp256k1-prefix/src/secp256k1-stamp/secp256k1-mkdir.rule
+/home/grenada/proj/atlast-crypto/secp256k1-prefix/src/secp256k1-stamp/secp256k1-download.rule
+/home/grenada/proj/atlast-crypto/secp256k1-prefix/src/secp256k1-stamp/secp256k1-update.rule
+/home/grenada/proj/atlast-crypto/secp256k1-prefix/src/secp256k1-stamp/secp256k1-patch.rule
+/home/grenada/proj/atlast-crypto/secp256k1-prefix/src/secp256k1-stamp/secp256k1-configure.rule
+/home/grenada/proj/atlast-crypto/secp256k1-prefix/src/secp256k1-stamp/secp256k1-build.rule
