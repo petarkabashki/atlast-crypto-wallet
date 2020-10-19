@@ -9,9 +9,8 @@ variable rnd
 32 4 * allot
 
 variable phrase
-200 allot
 
-0 rnd 16 phrase  bip39_mnemonic_from_bytes
+0 rnd 32 phrase  bip39_mnemonic_from_bytes
 drop
 
 variable seed
@@ -82,3 +81,5 @@ drop
 variable legacy_addr
 first_recv WALLY_ADDRESS_TYPE_P2PKH WALLY_ADDRESS_VERSION_P2PKH_TESTNET legacy_addr wally_bip32_key_to_address
 drop
+
+
