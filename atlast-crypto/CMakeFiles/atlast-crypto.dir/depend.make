@@ -7,12 +7,17 @@ atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_extensions/extensions_atl.c.o: at
 
 atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/atl_extensions/extensions_atl.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/main.c
+atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/wrap_wallycore/wrap_wally_address.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/wrap_wallycore/wrap_wally_bip32.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/wrap_wallycore/wrap_wally_bip38.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/wrap_wallycore/wrap_wally_bip39.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/wrap_wallycore/wrap_wally_core.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/wrap_wallycore/wrap_wally_crypto.h
+atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-crypto/wrap_wallycore/wrap_wally_transaction.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-forth/atlast-1.2/atlast.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o: atlast-forth/atlast-1.2/atldef.h
 
 atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.o: atlast-crypto/wrap_wallycore/wrap_wally_address.c
-atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.o: atlast-crypto/wrap_wallycore/wrap_wally_address.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.o: atlast-forth/atlast-1.2/atlast.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.o: atlast-forth/atlast-1.2/atldef.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.o: wallycore/include/wally_address.h

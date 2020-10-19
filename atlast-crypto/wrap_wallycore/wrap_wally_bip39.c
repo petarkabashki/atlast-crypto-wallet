@@ -63,7 +63,7 @@ void _wrap_bip39_mnemonic_from_bytes() {
   
     stackitem bytes_len = (stackitem) S1;
   
-    Hpc(S0)
+    // Hpc(S0)
     stackitem output = (stackitem) S0;
   
     int result =  bip39_mnemonic_from_bytes((struct words *) w, (unsigned char *) bytes, (int) bytes_len, (char **) output);

@@ -47,7 +47,14 @@
 // #include "wrap_secp256k1/wrap_secp256k1.h"
 
 // #include "wrap_wallycore/wallycore_common.h"
+
+#include "wrap_wallycore/wrap_wally_address.h"
+#include "wrap_wallycore/wrap_wally_bip32.h"
+#include "wrap_wallycore/wrap_wally_bip38.h"
+#include "wrap_wallycore/wrap_wally_bip39.h"
 #include "wrap_wallycore/wrap_wally_core.h"
+#include "wrap_wallycore/wrap_wally_crypto.h"
+#include "wrap_wallycore/wrap_wally_transaction.h"
 
 #define FALSE 0
 #define TRUE 1
@@ -114,7 +121,13 @@ atl_primdef(extensions_fcns);
 // atl_primdef(sha3_fcns);
 // atl_primdef(slip39_fcns);
 
+atl_primdef(wally_address_fcns);
+atl_primdef(wally_bip32_fcns);
+atl_primdef(wally_bip38_fcns);
+atl_primdef(wally_bip39_fcns);
 atl_primdef(wally_core_fcns);
+atl_primdef(wally_crypto_fcns);
+atl_primdef(wally_transaction_fcns);
 
 
 // atl_primdef(secp256k1_fcns);

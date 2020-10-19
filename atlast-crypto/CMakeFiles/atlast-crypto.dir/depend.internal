@@ -8,12 +8,17 @@ atlast-crypto/CMakeFiles/atlast-crypto.dir/atl_extensions/extensions_atl.c.o
 atlast-crypto/CMakeFiles/atlast-crypto.dir/main.c.o
  /home/grenada/proj/atlast-crypto/atlast-crypto/atl_extensions/extensions_atl.h
  /home/grenada/proj/atlast-crypto/atlast-crypto/main.c
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_address.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_bip32.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_bip38.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_bip39.h
  /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_core.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_crypto.h
+ /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_transaction.h
  atlast-forth/atlast-1.2/atlast.h
  atlast-forth/atlast-1.2/atldef.h
 atlast-crypto/CMakeFiles/atlast-crypto.dir/wrap_wallycore/wrap_wally_address.c.o
  /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_address.c
- /home/grenada/proj/atlast-crypto/atlast-crypto/wrap_wallycore/wrap_wally_address.h
  atlast-forth/atlast-1.2/atlast.h
  atlast-forth/atlast-1.2/atldef.h
  wallycore/include/wally_address.h
