@@ -1,6 +1,6 @@
 # Atlast-Forth bindings to libwally and Trezor crypto wallet routines.
 
-Why Atlast Forth ? Forth is the smallest possible Virtual Machine, stack-based programming language and operating system that can run on cheap microcontrollers.
+Why Atlast Forth ? Forth is the smallest possible Virtual Machine, stack-based programming language and operating system All-In-One that can run on cheap microcontrollers.
 Micropython is a arguably a better language (check Trezor's opensource hardware implementation), but it's GC and bells and whistles come with a performance and integration complexity penalty.
 Atlast Forth is a rock solid Forth implementation that consists of a single source file (plus a header file) in plain c, and can be embedded in anything.
 Crypto wallet running on the toaster ? All it takes is a 50 cent microcontroller.
